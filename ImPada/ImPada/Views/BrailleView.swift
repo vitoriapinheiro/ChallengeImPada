@@ -9,11 +9,9 @@ import SwiftUI
 
 struct BrailleView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "circle")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        HStack(spacing: 80){
+            GridView(code: [false, false, true, true, true, true])
+            GridView(code: [true, false, false, false, false, false])
         }
         .padding()
     }

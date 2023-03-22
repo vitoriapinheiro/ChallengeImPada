@@ -7,20 +7,62 @@
 
 import SwiftUI
 
+//protocol GameComponent {
+//
+//}
+//
+//struct FirstGameView: View, GameComponent {
+//
+//    var body: some View {
+//        VStack {
+//            Text("oi")
+//        }
+//    }
+//
+//}
+//
+//struct SecondGameView: View, GameComponent {
+//
+//    var body: some View {
+//        VStack {
+//            Text("oi 1")
+//        }
+//    }
+//
+//}
+
+
+//struct SecondGameView: View, GameComponent {
+//
+//}
+
+
+
+
+
+//struct ContentView<T: GameComponent & View >: View {
+//
+//    var gameView: T
+//
+//    var body: some View {
+//        VStack {
+//            gameView.body
+//        }
+//        .padding()
+////        .environmentObject()
+//    }
+//}
+
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView<FirstGameView>(gameView: FirstGameView())
+//    }
+//}
+
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "circle")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView{
+            OnboardingView()
         }
-        .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

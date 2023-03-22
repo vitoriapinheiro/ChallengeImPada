@@ -35,7 +35,7 @@ struct CircleView: View {
     var body: some View {
         if(isActive){
             Circle()
-                .foregroundColor(isPressed ? .red : .blue)
+                .foregroundColor(.red)
                 .frame(width: 90, height: 90)
                 .onTapGesture {
                     self.isPressed.toggle()
@@ -43,7 +43,7 @@ struct CircleView: View {
                         HapticManager.instance.impact(style: .heavy)
                     }
                 }
-                .onLongPressGesture(minimumDuration: 1) {
+                .onLongPressGesture(minimumDuration: 3) {
                     HapticManager.instance.impact(style: .heavy)
                 } onPressingChanged:{ inProgress in
                     if inProgress {

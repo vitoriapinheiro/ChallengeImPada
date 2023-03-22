@@ -7,14 +7,30 @@
 
 import SwiftUI
 
+
+
+//enum NumberCode {
+//
+//    case ONE
+//    case TWO
+//
+//    var value: [Bool] {
+//        switch self {
+//            case .ONE :
+//                return [false, false, true, true, true, true]
+//            default:
+//                return [false, false, true, true, true, true]
+//        }
+//    }
+//}
+
+
+
 @main
 struct ImPadaApp: App {
     var body: some Scene {
         WindowGroup {
-            HStack(spacing: 80){
-                GridView(code: [false, false, true, true, true, true])
-                GridView(code: [true, false, false, false, false, false])
-            }
+            ContentView()
         }
     }
 }
