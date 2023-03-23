@@ -20,7 +20,7 @@ class MusicPlayer: ObservableObject {
     
     
     func startBackgroundMusic(backgroundMusicFileName: String) {
-        if let bundle = Bundle.main.path(forResource: backgroundMusicFileName, ofType: "m4a") {
+        if let bundle = Bundle.main.path(forResource: backgroundMusicFileName, ofType: "mp3") {
             let backgroundMusic = NSURL(fileURLWithPath: bundle)
             do {
                 audioPlayer = try AVAudioPlayer(contentsOf:backgroundMusic as URL)

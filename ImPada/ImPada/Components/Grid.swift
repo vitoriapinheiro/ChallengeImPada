@@ -40,20 +40,16 @@ struct CircleView: View {
                 .onTapGesture {
                     self.isPressed.toggle()
                     if self.isPressed {
-                        HapticManager.instance.impact(style: .heavy)
-                    }
-                }
-                .onLongPressGesture(minimumDuration: 3) {
-                    HapticManager.instance.impact(style: .heavy)
-                } onPressingChanged:{ inProgress in
-                    if inProgress {
-                        HapticManager.instance.impact(style: .heavy)
+                        //HapticManager.instance.impact(style: .heavy)
+                        MusicPlayer.shared.startBackgroundMusic(backgroundMusicFileName: "teste1")
                     }
                 }
         } else {
+            
             Circle()
                 .foregroundColor(.gray)
                 .frame(width: 90, height: 90)
+            
         }
     }
 }

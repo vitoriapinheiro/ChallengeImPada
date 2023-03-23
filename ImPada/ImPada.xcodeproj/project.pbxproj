@@ -22,6 +22,7 @@
 		44D0D63629CB482B00FACC96 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D63529CB482B00FACC96 /* MusicPlayer.swift */; };
 		44D0D63829CB491F00FACC96 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D63729CB491F00FACC96 /* ErrorView.swift */; };
 		44D0D63F29CB4ADE00FACC96 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D63E29CB4ADE00FACC96 /* Button.swift */; };
+		942C7DCC29CC888200490406 /* teste1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 942C7DCB29CC888200490406 /* teste1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		44D0D63529CB482B00FACC96 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		44D0D63729CB491F00FACC96 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		44D0D63E29CB4ADE00FACC96 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		942C7DCB29CC888200490406 /* teste1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = teste1.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		4499B7D829C355CA001D39EB /* ImPada */ = {
 			isa = PBXGroup;
 			children = (
+				942C7DC629CC878E00490406 /* Songs */,
 				4489343B29C8A46E0072EC28 /* Model */,
 				4489343829C88C1A0072EC28 /* Views */,
 				4499B7EA29C4813C001D39EB /* Components */,
@@ -146,6 +149,14 @@
 			children = (
 			);
 			path = Cards;
+			sourceTree = "<group>";
+		};
+		942C7DC629CC878E00490406 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				942C7DCB29CC888200490406 /* teste1.mp3 */,
+			);
+			path = Songs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				942C7DCC29CC888200490406 /* teste1.mp3 in Resources */,
 				4499B7E129C355CC001D39EB /* Preview Assets.xcassets in Resources */,
 				4499B7DE29C355CC001D39EB /* Assets.xcassets in Resources */,
 			);
@@ -359,7 +371,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ImPada/Preview Content\"";
-				DEVELOPMENT_TEAM = PST723S8CA;
+				DEVELOPMENT_TEAM = 38JDBWN7B4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
@@ -388,7 +400,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ImPada/Preview Content\"";
-				DEVELOPMENT_TEAM = PST723S8CA;
+				DEVELOPMENT_TEAM = 38JDBWN7B4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
