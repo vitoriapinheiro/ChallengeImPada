@@ -62,10 +62,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView{
-            NumberView()
-        }.navigationViewStyle(.stack)
-            .ignoresSafeArea()
-            .navigationBarBackButtonHidden()
-            .statusBarHidden()
+            BrailleView()
+        }
     }
 }
