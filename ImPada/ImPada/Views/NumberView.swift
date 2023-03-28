@@ -29,7 +29,7 @@ struct NumberView: View {
                                    lineWidth: line.lineWidth)
                 }
             }
-            .frame(minWidth: 300, minHeight: 400)
+            .frame(maxWidth: 400, maxHeight: 400)
             .gesture(
                 DragGesture(minimumDistance: 0, coordinateSpace: .local)
                     .onChanged({value in
