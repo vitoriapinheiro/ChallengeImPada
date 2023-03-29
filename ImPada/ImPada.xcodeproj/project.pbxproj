@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		447B059529D4834300714CE9 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B059429D4834300714CE9 /* AppButton.swift */; };
+		447B059729D4E3C700714CE9 /* CongratsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B059629D4E3C700714CE9 /* CongratsView.swift */; };
 		4489343A29C88C3A0072EC28 /* BrailleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489343929C88C3A0072EC28 /* BrailleView.swift */; };
 		4489343D29C8A4970072EC28 /* BrailleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489343C29C8A4970072EC28 /* BrailleModel.swift */; };
 		4499B7DA29C355CA001D39EB /* ImPadaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4499B7D929C355CA001D39EB /* ImPadaApp.swift */; };
@@ -21,7 +23,7 @@
 		44D0D63429CB475900FACC96 /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D63329CB475900FACC96 /* SelectView.swift */; };
 		44D0D63629CB482B00FACC96 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D63529CB482B00FACC96 /* MusicPlayer.swift */; };
 		44D0D63829CB491F00FACC96 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D63729CB491F00FACC96 /* ErrorView.swift */; };
-		44D0D63F29CB4ADE00FACC96 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D63E29CB4ADE00FACC96 /* Button.swift */; };
+		44D0D63F29CB4ADE00FACC96 /* AppImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D63E29CB4ADE00FACC96 /* AppImageButton.swift */; };
 		44D0D64629CC8D8D00FACC96 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D64529CC8D8D00FACC96 /* Colors.swift */; };
 		44D0D64C29CC99E800FACC96 /* Fredoka-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64729CC99E800FACC96 /* Fredoka-SemiBold.ttf */; };
 		44D0D64D29CC99E800FACC96 /* Fredoka-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64829CC99E800FACC96 /* Fredoka-Light.ttf */; };
@@ -33,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		447B059429D4834300714CE9 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		447B059629D4E3C700714CE9 /* CongratsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsView.swift; sourceTree = "<group>"; };
 		4489343929C88C3A0072EC28 /* BrailleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrailleView.swift; sourceTree = "<group>"; };
 		4489343C29C8A4970072EC28 /* BrailleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrailleModel.swift; sourceTree = "<group>"; };
 		4499B7D629C355CA001D39EB /* ImPada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImPada.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +52,7 @@
 		44D0D63329CB475900FACC96 /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
 		44D0D63529CB482B00FACC96 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		44D0D63729CB491F00FACC96 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
-		44D0D63E29CB4ADE00FACC96 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		44D0D63E29CB4ADE00FACC96 /* AppImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImageButton.swift; sourceTree = "<group>"; };
 		44D0D64529CC8D8D00FACC96 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		44D0D64729CC99E800FACC96 /* Fredoka-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-SemiBold.ttf"; sourceTree = "<group>"; };
 		44D0D64829CC99E800FACC96 /* Fredoka-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Light.ttf"; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 				44D0D63129CB470400FACC96 /* HomeView.swift */,
 				44D0D63329CB475900FACC96 /* SelectView.swift */,
 				44D0D63729CB491F00FACC96 /* ErrorView.swift */,
+				447B059629D4E3C700714CE9 /* CongratsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -154,7 +159,8 @@
 		44D0D64029CB4AFB00FACC96 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				44D0D63E29CB4ADE00FACC96 /* Button.swift */,
+				44D0D63E29CB4ADE00FACC96 /* AppImageButton.swift */,
+				447B059429D4834300714CE9 /* AppButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -288,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44D0D63629CB482B00FACC96 /* MusicPlayer.swift in Sources */,
+				447B059729D4E3C700714CE9 /* CongratsView.swift in Sources */,
 				44D0D63429CB475900FACC96 /* SelectView.swift in Sources */,
 				44D0D65529CCDA7700FACC96 /* CanvasView.swift in Sources */,
 				44D0D63229CB470400FACC96 /* HomeView.swift in Sources */,
@@ -298,9 +305,10 @@
 				4489343D29C8A4970072EC28 /* BrailleModel.swift in Sources */,
 				44D0D63829CB491F00FACC96 /* ErrorView.swift in Sources */,
 				4499B7DA29C355CA001D39EB /* ImPadaApp.swift in Sources */,
+				447B059529D4834300714CE9 /* AppButton.swift in Sources */,
 				44D0D63029CB469C00FACC96 /* OnboardingView.swift in Sources */,
 				4499B7EC29C48173001D39EB /* GridView.swift in Sources */,
-				44D0D63F29CB4ADE00FACC96 /* Button.swift in Sources */,
+				44D0D63F29CB4ADE00FACC96 /* AppImageButton.swift in Sources */,
 				44D0D62E29CB451C00FACC96 /* NumberView.swift in Sources */,
 				44D0D65229CCDA0C00FACC96 /* MNISTClassifier.mlmodel in Sources */,
 			);

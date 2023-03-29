@@ -15,7 +15,6 @@ struct NumberModels: Identifiable {
 }
 
 var numbers = [
-    
     NumberModels(
         id: 0,
         name: "Zero",
