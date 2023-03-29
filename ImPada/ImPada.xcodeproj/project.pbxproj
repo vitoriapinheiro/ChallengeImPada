@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		447B059529D4834300714CE9 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B059429D4834300714CE9 /* AppButton.swift */; };
 		4489343A29C88C3A0072EC28 /* BrailleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489343929C88C3A0072EC28 /* BrailleView.swift */; };
 		4489343D29C8A4970072EC28 /* BrailleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489343C29C8A4970072EC28 /* BrailleModel.swift */; };
 		4499B7DA29C355CA001D39EB /* ImPadaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4499B7D929C355CA001D39EB /* ImPadaApp.swift */; };
@@ -14,17 +15,26 @@
 		4499B7DE29C355CC001D39EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4499B7DD29C355CC001D39EB /* Assets.xcassets */; };
 		4499B7E129C355CC001D39EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4499B7E029C355CC001D39EB /* Preview Assets.xcassets */; };
 		4499B7E929C47F84001D39EB /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4499B7E829C47F84001D39EB /* Haptics.swift */; };
-		4499B7EC29C48173001D39EB /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4499B7EB29C48173001D39EB /* Grid.swift */; };
+		4499B7EC29C48173001D39EB /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4499B7EB29C48173001D39EB /* GridView.swift */; };
 		44D0D62E29CB451C00FACC96 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D62D29CB451C00FACC96 /* NumberView.swift */; };
 		44D0D63029CB469C00FACC96 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D62F29CB469C00FACC96 /* OnboardingView.swift */; };
 		44D0D63229CB470400FACC96 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D63129CB470400FACC96 /* HomeView.swift */; };
 		44D0D63429CB475900FACC96 /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D63329CB475900FACC96 /* SelectView.swift */; };
 		44D0D63629CB482B00FACC96 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D63529CB482B00FACC96 /* MusicPlayer.swift */; };
 		44D0D63829CB491F00FACC96 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D63729CB491F00FACC96 /* ErrorView.swift */; };
-		44D0D63F29CB4ADE00FACC96 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D63E29CB4ADE00FACC96 /* Button.swift */; };
+		44D0D63F29CB4ADE00FACC96 /* AppImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D63E29CB4ADE00FACC96 /* AppImageButton.swift */; };
+		44D0D64629CC8D8D00FACC96 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D64529CC8D8D00FACC96 /* Colors.swift */; };
+		44D0D64C29CC99E800FACC96 /* Fredoka-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64729CC99E800FACC96 /* Fredoka-SemiBold.ttf */; };
+		44D0D64D29CC99E800FACC96 /* Fredoka-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64829CC99E800FACC96 /* Fredoka-Light.ttf */; };
+		44D0D64E29CC99E800FACC96 /* Fredoka-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64929CC99E800FACC96 /* Fredoka-Regular.ttf */; };
+		44D0D64F29CC99E800FACC96 /* Fredoka-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64A29CC99E800FACC96 /* Fredoka-Medium.ttf */; };
+		44D0D65029CC99E800FACC96 /* Fredoka-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64B29CC99E800FACC96 /* Fredoka-Bold.ttf */; };
+		44D0D65229CCDA0C00FACC96 /* MNISTClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D65129CCDA0B00FACC96 /* MNISTClassifier.mlmodel */; };
+		44D0D65529CCDA7700FACC96 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D65429CCDA7700FACC96 /* CanvasView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		447B059429D4834300714CE9 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
 		4489343929C88C3A0072EC28 /* BrailleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrailleView.swift; sourceTree = "<group>"; };
 		4489343C29C8A4970072EC28 /* BrailleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrailleModel.swift; sourceTree = "<group>"; };
 		4499B7D629C355CA001D39EB /* ImPada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImPada.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,14 +43,22 @@
 		4499B7DD29C355CC001D39EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4499B7E029C355CC001D39EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4499B7E829C47F84001D39EB /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
-		4499B7EB29C48173001D39EB /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		4499B7EB29C48173001D39EB /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		44D0D62D29CB451C00FACC96 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
 		44D0D62F29CB469C00FACC96 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		44D0D63129CB470400FACC96 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		44D0D63329CB475900FACC96 /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
 		44D0D63529CB482B00FACC96 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		44D0D63729CB491F00FACC96 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
-		44D0D63E29CB4ADE00FACC96 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		44D0D63E29CB4ADE00FACC96 /* AppImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImageButton.swift; sourceTree = "<group>"; };
+		44D0D64529CC8D8D00FACC96 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		44D0D64729CC99E800FACC96 /* Fredoka-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-SemiBold.ttf"; sourceTree = "<group>"; };
+		44D0D64829CC99E800FACC96 /* Fredoka-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Light.ttf"; sourceTree = "<group>"; };
+		44D0D64929CC99E800FACC96 /* Fredoka-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Regular.ttf"; sourceTree = "<group>"; };
+		44D0D64A29CC99E800FACC96 /* Fredoka-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Medium.ttf"; sourceTree = "<group>"; };
+		44D0D64B29CC99E800FACC96 /* Fredoka-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Bold.ttf"; sourceTree = "<group>"; };
+		44D0D65129CCDA0B00FACC96 /* MNISTClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MNISTClassifier.mlmodel; sourceTree = "<group>"; };
+		44D0D65429CCDA7700FACC96 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +75,7 @@
 		4489343829C88C1A0072EC28 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4499B7DB29C355CA001D39EB /* ContentView.swift */,
 				4489343929C88C3A0072EC28 /* BrailleView.swift */,
 				44D0D62D29CB451C00FACC96 /* NumberView.swift */,
 				44D0D62F29CB469C00FACC96 /* OnboardingView.swift */,
@@ -94,12 +113,13 @@
 		4499B7D829C355CA001D39EB /* ImPada */ = {
 			isa = PBXGroup;
 			children = (
+				44D0D65329CCDA4600FACC96 /* NeuralNetwork */,
+				44D0D64229CC8D3300FACC96 /* Styles */,
 				4489343B29C8A46E0072EC28 /* Model */,
 				4489343829C88C1A0072EC28 /* Views */,
 				4499B7EA29C4813C001D39EB /* Components */,
 				4499B7E729C47F6E001D39EB /* Helpers */,
 				4499B7D929C355CA001D39EB /* ImPadaApp.swift */,
-				4499B7DB29C355CA001D39EB /* ContentView.swift */,
 				4499B7DD29C355CC001D39EB /* Assets.xcassets */,
 				4499B7DF29C355CC001D39EB /* Preview Content */,
 			);
@@ -126,9 +146,9 @@
 		4499B7EA29C4813C001D39EB /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				44D0D65629CCDA9800FACC96 /* Subviews */,
 				44D0D64129CB4B0200FACC96 /* Cards */,
 				44D0D64029CB4AFB00FACC96 /* Buttons */,
-				4499B7EB29C48173001D39EB /* Grid.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -136,7 +156,8 @@
 		44D0D64029CB4AFB00FACC96 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				44D0D63E29CB4ADE00FACC96 /* Button.swift */,
+				44D0D63E29CB4ADE00FACC96 /* AppImageButton.swift */,
+				447B059429D4834300714CE9 /* AppButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -146,6 +167,52 @@
 			children = (
 			);
 			path = Cards;
+			sourceTree = "<group>";
+		};
+		44D0D64229CC8D3300FACC96 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				44D0D64429CC8D5500FACC96 /* Colors */,
+				44D0D64329CC8D4E00FACC96 /* Fonts */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		44D0D64329CC8D4E00FACC96 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				44D0D64B29CC99E800FACC96 /* Fredoka-Bold.ttf */,
+				44D0D64829CC99E800FACC96 /* Fredoka-Light.ttf */,
+				44D0D64A29CC99E800FACC96 /* Fredoka-Medium.ttf */,
+				44D0D64929CC99E800FACC96 /* Fredoka-Regular.ttf */,
+				44D0D64729CC99E800FACC96 /* Fredoka-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		44D0D64429CC8D5500FACC96 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				44D0D64529CC8D8D00FACC96 /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		44D0D65329CCDA4600FACC96 /* NeuralNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				44D0D65129CCDA0B00FACC96 /* MNISTClassifier.mlmodel */,
+			);
+			path = NeuralNetwork;
+			sourceTree = "<group>";
+		};
+		44D0D65629CCDA9800FACC96 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				4499B7EB29C48173001D39EB /* GridView.swift */,
+				44D0D65429CCDA7700FACC96 /* CanvasView.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +273,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D0D64C29CC99E800FACC96 /* Fredoka-SemiBold.ttf in Resources */,
 				4499B7E129C355CC001D39EB /* Preview Assets.xcassets in Resources */,
+				44D0D64E29CC99E800FACC96 /* Fredoka-Regular.ttf in Resources */,
+				44D0D64D29CC99E800FACC96 /* Fredoka-Light.ttf in Resources */,
+				44D0D65029CC99E800FACC96 /* Fredoka-Bold.ttf in Resources */,
+				44D0D64F29CC99E800FACC96 /* Fredoka-Medium.ttf in Resources */,
 				4499B7DE29C355CC001D39EB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,17 +292,21 @@
 			files = (
 				44D0D63629CB482B00FACC96 /* MusicPlayer.swift in Sources */,
 				44D0D63429CB475900FACC96 /* SelectView.swift in Sources */,
+				44D0D65529CCDA7700FACC96 /* CanvasView.swift in Sources */,
 				44D0D63229CB470400FACC96 /* HomeView.swift in Sources */,
+				44D0D64629CC8D8D00FACC96 /* Colors.swift in Sources */,
 				4489343A29C88C3A0072EC28 /* BrailleView.swift in Sources */,
 				4499B7E929C47F84001D39EB /* Haptics.swift in Sources */,
 				4499B7DC29C355CA001D39EB /* ContentView.swift in Sources */,
 				4489343D29C8A4970072EC28 /* BrailleModel.swift in Sources */,
 				44D0D63829CB491F00FACC96 /* ErrorView.swift in Sources */,
 				4499B7DA29C355CA001D39EB /* ImPadaApp.swift in Sources */,
+				447B059529D4834300714CE9 /* AppButton.swift in Sources */,
 				44D0D63029CB469C00FACC96 /* OnboardingView.swift in Sources */,
-				4499B7EC29C48173001D39EB /* Grid.swift in Sources */,
-				44D0D63F29CB4ADE00FACC96 /* Button.swift in Sources */,
+				4499B7EC29C48173001D39EB /* GridView.swift in Sources */,
+				44D0D63F29CB4ADE00FACC96 /* AppImageButton.swift in Sources */,
 				44D0D62E29CB451C00FACC96 /* NumberView.swift in Sources */,
+				44D0D65229CCDA0C00FACC96 /* MNISTClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +438,7 @@
 				DEVELOPMENT_TEAM = PST723S8CA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "T-numbers";
+				INFOPLIST_KEY_CFBundleDisplayName = "T-Number";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -394,7 +470,7 @@
 				DEVELOPMENT_TEAM = PST723S8CA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "T-numbers";
+				INFOPLIST_KEY_CFBundleDisplayName = "T-Number";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
