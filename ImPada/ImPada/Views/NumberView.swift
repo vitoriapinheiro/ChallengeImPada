@@ -10,7 +10,7 @@ import SwiftUI
 struct Line{
     var points = [CGPoint]()
     var color: Color = .mediumPink
-    var lineWidth: Double = 50.0
+    var lineWidth: Double = 30.0
 }
 
 struct NumberView: View {
@@ -19,34 +19,58 @@ struct NumberView: View {
     @State private var lines: [Line] = []
     
     var body: some View {
-        VStack {
-            Canvas{ context, size in
-                for line in lines {
-                    var path = Path()
-                    path.addLines(line.points)
-                    context.stroke(path,
-                                   with: .color(line.color),
-                                   lineWidth: line.lineWidth)
-                }
-            }
-            .frame(maxWidth: 400, maxHeight: 400)
-            .gesture(
-                DragGesture(minimumDistance: 0, coordinateSpace: .local)
-                    .onChanged({value in
-                        let newPoint = value.location
-                        currLine.points.append(newPoint)
-                        self.lines.append(currLine)
-                    })
-                    .onEnded({ value in
-                        self.currLine = Line(points: [])
-                    })
+        VStack{
+            AppImageButton(
+                icon: "TalkBox",
+                nextView: {AnyView(BrailleView())},
+                width: 800,
+                height: 140
             )
-            .background(
+            .padding(.top, 90)
+            .padding(.horizontal, 116)
+            .padding(.bottom, 100)
+            Spacer()
+            HStack{
                 Image("One")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-            )
+                    .frame(width: 350, height: 350)
+                VStack {
+                    Canvas{ context, size in
+                        for line in lines {
+                            var path = Path()
+                            path.addLines(line.points)
+                            context.stroke(path,
+                                           with: .color(line.color),
+                                           lineWidth: line.lineWidth)
+                        }
+                    }
+                    .frame(width: 350, height: 350)
+                    .gesture(
+                        DragGesture(minimumDistance: 0, coordinateSpace: .local)
+                            .onChanged({value in
+                                let newPoint = value.location
+                                currLine.points.append(newPoint)
+                                self.lines.append(currLine)
+                            })
+                            .onEnded({ value in
+                                self.currLine = Line(points: [])
+                            })
+                    )
+                    .background(
+                        Image("One")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                    )
+                }
+                .padding()
             }
-        .padding()
+            .padding(.bottom, 160)
+        }.background(
+            Image("BlueScenario")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .clipped())
+        .ignoresSafeArea(.all)
     }
 }

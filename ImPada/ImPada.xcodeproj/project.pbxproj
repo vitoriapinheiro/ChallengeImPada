@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		447B059529D4834300714CE9 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B059429D4834300714CE9 /* AppButton.swift */; };
+		447B059729D4E3C700714CE9 /* CongratsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B059629D4E3C700714CE9 /* CongratsView.swift */; };
 		4489343A29C88C3A0072EC28 /* BrailleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489343929C88C3A0072EC28 /* BrailleView.swift */; };
 		4489343D29C8A4970072EC28 /* BrailleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489343C29C8A4970072EC28 /* BrailleModel.swift */; };
 		4499B7DA29C355CA001D39EB /* ImPadaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4499B7D929C355CA001D39EB /* ImPadaApp.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		447B059429D4834300714CE9 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		447B059629D4E3C700714CE9 /* CongratsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsView.swift; sourceTree = "<group>"; };
 		4489343929C88C3A0072EC28 /* BrailleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrailleView.swift; sourceTree = "<group>"; };
 		4489343C29C8A4970072EC28 /* BrailleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrailleModel.swift; sourceTree = "<group>"; };
 		4499B7D629C355CA001D39EB /* ImPada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImPada.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +84,7 @@
 				44D0D63129CB470400FACC96 /* HomeView.swift */,
 				44D0D63329CB475900FACC96 /* SelectView.swift */,
 				44D0D63729CB491F00FACC96 /* ErrorView.swift */,
+				447B059629D4E3C700714CE9 /* CongratsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44D0D63629CB482B00FACC96 /* MusicPlayer.swift in Sources */,
+				447B059729D4E3C700714CE9 /* CongratsView.swift in Sources */,
 				44D0D63429CB475900FACC96 /* SelectView.swift in Sources */,
 				44D0D65529CCDA7700FACC96 /* CanvasView.swift in Sources */,
 				44D0D63229CB470400FACC96 /* HomeView.swift in Sources */,

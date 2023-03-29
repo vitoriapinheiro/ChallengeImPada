@@ -25,8 +25,8 @@ struct HomeView: View {
             Image("OnboardingScenario")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .ignoresSafeArea(.all)
-        )
+                .clipped())
+        .ignoresSafeArea(.all)
         .navigationBarBackButtonHidden()
     }
 }

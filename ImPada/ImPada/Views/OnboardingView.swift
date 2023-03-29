@@ -33,9 +33,9 @@ struct OnboardingView: View {
         }
         .background(
             Image("OnboardingScenario")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .ignoresSafeArea(.all)
-        )
+        .resizable()
+        .aspectRatio(contentMode: .fill)
+        .clipped())
+        .ignoresSafeArea(.all)
     }
 }
