@@ -6,63 +6,32 @@
 //
 
 import SwiftUI
+import SpriteKit
 
-//protocol GameComponent {
-//
-//}
-//
-//struct FirstGameView: View, GameComponent {
-//
-//    var body: some View {
-//        VStack {
-//            Text("oi")
-//        }
-//    }
-//
-//}
-//
-//struct SecondGameView: View, GameComponent {
-//
-//    var body: some View {
-//        VStack {
-//            Text("oi 1")
-//        }
-//    }
-//
-//}
-
-
-//struct SecondGameView: View, GameComponent {
-//
-//}
-
-
-
-
-
-//struct ContentView<T: GameComponent & View >: View {
-//
-//    var gameView: T
-//
-//    var body: some View {
-//        VStack {
-//            gameView.body
-//        }
-//        .padding()
-////        .environmentObject()
-//    }
-//}
-
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView<FirstGameView>(gameView: FirstGameView())
-//    }
-//}
 
 struct ContentView: View {
+    
+    let screenWidht = UIScreen.main.bounds.width
+    let screenHeight = UIScreen.main.bounds.height
+    
+    var scene: SKScene {
+        let scene = GameScene()
+        scene.size = CGSize(width: screenWidht, height: screenHeight)
+        
+        scene.scaleMode = .fill
+        scene.backgroundColor = .black
+        
+        return scene
+    }
+    
+    
     var body: some View {
-        NavigationView{
-            BrailleView()
+        VStack {
+            SpriteView(scene: scene)
+                .frame(width: screenWidht, height: screenHeight, alignment: .center)
+                .edgesIgnoringSafeArea(.all)
+            
+        
         }
     }
 }

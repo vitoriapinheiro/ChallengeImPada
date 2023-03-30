@@ -30,7 +30,7 @@ import SwiftUI
 struct ImPadaApp: App {
     var body: some Scene {
         WindowGroup {
-            HoverTest()
+            ContentView()
         }
     }
 }

@@ -28,7 +28,7 @@
 		44D0D64E29CC99E800FACC96 /* Fredoka-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64929CC99E800FACC96 /* Fredoka-Regular.ttf */; };
 		44D0D64F29CC99E800FACC96 /* Fredoka-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64A29CC99E800FACC96 /* Fredoka-Medium.ttf */; };
 		44D0D65029CC99E800FACC96 /* Fredoka-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64B29CC99E800FACC96 /* Fredoka-Bold.ttf */; };
-		94869FD329D32ADC0034EDF5 /* HoverTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94869FD229D32ADC0034EDF5 /* HoverTest.swift */; };
+		94869FD329D32ADC0034EDF5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94869FD229D32ADC0034EDF5 /* GameScene.swift */; };
 		9493891629D31CFF00FE331C /* teste1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9493891529D31CFF00FE331C /* teste1.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +55,7 @@
 		44D0D64929CC99E800FACC96 /* Fredoka-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Regular.ttf"; sourceTree = "<group>"; };
 		44D0D64A29CC99E800FACC96 /* Fredoka-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Medium.ttf"; sourceTree = "<group>"; };
 		44D0D64B29CC99E800FACC96 /* Fredoka-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Bold.ttf"; sourceTree = "<group>"; };
-		94869FD229D32ADC0034EDF5 /* HoverTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverTest.swift; sourceTree = "<group>"; };
+		94869FD229D32ADC0034EDF5 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		9493891529D31CFF00FE331C /* teste1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = teste1.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +80,7 @@
 				44D0D63129CB470400FACC96 /* HomeView.swift */,
 				44D0D63329CB475900FACC96 /* SelectView.swift */,
 				44D0D63729CB491F00FACC96 /* ErrorView.swift */,
-				94869FD229D32ADC0034EDF5 /* HoverTest.swift */,
+				94869FD229D32ADC0034EDF5 /* GameScene.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -284,7 +284,7 @@
 				4499B7DA29C355CA001D39EB /* ImPadaApp.swift in Sources */,
 				44D0D63029CB469C00FACC96 /* OnboardingView.swift in Sources */,
 				4499B7EC29C48173001D39EB /* Grid.swift in Sources */,
-				94869FD329D32ADC0034EDF5 /* HoverTest.swift in Sources */,
+				94869FD329D32ADC0034EDF5 /* GameScene.swift in Sources */,
 				44D0D63F29CB4ADE00FACC96 /* Button.swift in Sources */,
 				44D0D62E29CB451C00FACC96 /* NumberView.swift in Sources */,
 			);
