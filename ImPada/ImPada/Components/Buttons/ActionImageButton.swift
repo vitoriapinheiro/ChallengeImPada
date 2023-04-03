@@ -1,28 +1,28 @@
 //
-//  Button.swift
+//  ActionImageButton.swift
 //  ImPada
 //
-//  Created by vivi on 22/03/23.
+//  Created by vivi on 30/03/23.
 //
-
 import SwiftUI
 
-struct AppImageButton: View {
+struct ActionImageButton: View {
     let icon: String
-    let nextView: () -> AnyView
-    let width: CGFloat
+    let action: () -> Void
     let height: CGFloat
+    let width: CGFloat
     
     var body: some View {
-        NavigationLink(
-            destination: {
-                nextView()
-            }, label: {
+        Button(action: {
+            action()
+        }, label: {
+            ZStack{
                 Image(icon)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: width, height: height)
             }
+        }
         )
     }
 }

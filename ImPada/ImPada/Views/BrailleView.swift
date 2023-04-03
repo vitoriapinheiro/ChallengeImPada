@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct BrailleView: View {
+    @Binding var level: Int
+    
     var body: some View {
         VStack{
-            AppImageButton(
+            NavigationImageButton(
                 icon: "TalkBox",
-                nextView: {AnyView(BrailleView())},
+                nextView: {AnyView(BrailleView(level: $level))},
                 width: 800,
                 height: 140
             )
@@ -26,8 +28,8 @@ struct BrailleView: View {
             }
             HStack{
                 Spacer()
-                AppButton(icon: "RoundButton",
-                          nextView: {AnyView(CongratsView())},
+                NavigationButton(icon: "RoundButton",
+                          nextView: {AnyView(CongratsView(level: $level))},
                           width: 240,
                           height: 70,
                           title: "Finalizar",

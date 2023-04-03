@@ -7,30 +7,14 @@
 
 import SwiftUI
 
-
-
-//enum NumberCode {
-//
-//    case ONE
-//    case TWO
-//
-//    var value: [Bool] {
-//        switch self {
-//            case .ONE :
-//                return [false, false, true, true, true, true]
-//            default:
-//                return [false, false, true, true, true, true]
-//        }
-//    }
-//}
-
-
-
 @main
 struct ImPadaApp: App {
+    @StateObject private var dataController = DataController()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }

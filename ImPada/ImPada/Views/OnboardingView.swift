@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    @Binding var onboarding: Bool
+    
     var body: some View {
         VStack {
-            AppImageButton(
+            NavigationImageButton(
                 icon: "TalkBox",
-                nextView: {AnyView(HomeView())},
+                nextView: {AnyView(HomeView(onboarding: $onboarding))},
                 width: 880,
                 height: 224
             )
@@ -21,9 +23,9 @@ struct OnboardingView: View {
             Spacer()
             HStack{
               Spacer()
-            AppImageButton(
+            NavigationImageButton(
                 icon: "PinkNext",
-                nextView: {AnyView(HomeView())},
+                nextView: {AnyView(HomeView(onboarding: $onboarding))},
                 width: 140,
                 height: 148
             )

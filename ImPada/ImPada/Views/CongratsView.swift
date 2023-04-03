@@ -7,6 +7,8 @@
 import SwiftUI
 
 struct CongratsView: View {
+    @Binding var level: Int
+    
     var body: some View {
         VStack {
             Text("Você conseguiu!")
@@ -18,16 +20,16 @@ struct CongratsView: View {
                 .frame(width: 260, height: 260)
             Spacer()
             HStack{
-                AppButton(icon: "RoundButton",
-                          nextView: {AnyView(SelectView())},
+                NavigationButton(icon: "RoundButton",
+                          nextView: {AnyView(SelectView(level: $level))},
                           width: 240,
                           height: 70,
                           title: "Menu",
                           size: 24
                 )
                 .padding(.trailing, 70)
-                AppButton(icon: "RoundButton",
-                          nextView: {AnyView(SelectView())},
+                NavigationButton(icon: "RoundButton",
+                          nextView: {AnyView(SelectView(level: $level))},
                           width: 240,
                           height: 70,
                           title: "Próximo",

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AppButton: View {
+struct NavigationButton: View {
     let icon: String
     let nextView: () -> AnyView
     let width: CGFloat

@@ -60,9 +60,16 @@ import SwiftUI
 //}
 
 struct ContentView: View {
+    @AppStorage("onboarding") var onboarding: Bool = false
+    @FetchRequest(sortDescriptors: []) var Number: FetchedResults<Number>
+    
     var body: some View {
         NavigationView{
-            OnboardingView()
+            if(onboarding){
+                HomeView(onboarding: $onboarding)
+            } else {
+                OnboardingView(onboarding: $onboarding)
+            }
         }.navigationViewStyle(.stack)
             .ignoresSafeArea()
             .navigationBarBackButtonHidden()

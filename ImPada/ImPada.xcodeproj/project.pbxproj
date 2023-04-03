@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		447B059529D4834300714CE9 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B059429D4834300714CE9 /* AppButton.swift */; };
+		443DD62529D6032900412D7E /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443DD62429D6032900412D7E /* ActionButton.swift */; };
+		443DD62829D6618900412D7E /* ActionImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443DD62729D6618800412D7E /* ActionImageButton.swift */; };
+		443DD62B29D6FA8800412D7E /* NumberModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 443DD62929D6FA8800412D7E /* NumberModel.xcdatamodeld */; };
+		4449780E29D4F5C200111F41 /* GameOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4449780D29D4F5C200111F41 /* GameOne.swift */; };
+		447B059529D4834300714CE9 /* NavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B059429D4834300714CE9 /* NavigationButton.swift */; };
 		447B059729D4E3C700714CE9 /* CongratsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B059629D4E3C700714CE9 /* CongratsView.swift */; };
 		4489343A29C88C3A0072EC28 /* BrailleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489343929C88C3A0072EC28 /* BrailleView.swift */; };
-		4489343D29C8A4970072EC28 /* BrailleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489343C29C8A4970072EC28 /* BrailleModel.swift */; };
+		4489343D29C8A4970072EC28 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489343C29C8A4970072EC28 /* DataController.swift */; };
 		4499B7DA29C355CA001D39EB /* ImPadaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4499B7D929C355CA001D39EB /* ImPadaApp.swift */; };
 		4499B7DC29C355CA001D39EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4499B7DB29C355CA001D39EB /* ContentView.swift */; };
 		4499B7DE29C355CC001D39EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4499B7DD29C355CC001D39EB /* Assets.xcassets */; };
@@ -23,7 +27,7 @@
 		44D0D63429CB475900FACC96 /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D63329CB475900FACC96 /* SelectView.swift */; };
 		44D0D63629CB482B00FACC96 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D63529CB482B00FACC96 /* MusicPlayer.swift */; };
 		44D0D63829CB491F00FACC96 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D63729CB491F00FACC96 /* ErrorView.swift */; };
-		44D0D63F29CB4ADE00FACC96 /* AppImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D63E29CB4ADE00FACC96 /* AppImageButton.swift */; };
+		44D0D63F29CB4ADE00FACC96 /* NavigationImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D63E29CB4ADE00FACC96 /* NavigationImageButton.swift */; };
 		44D0D64629CC8D8D00FACC96 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D64529CC8D8D00FACC96 /* Colors.swift */; };
 		44D0D64C29CC99E800FACC96 /* Fredoka-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64729CC99E800FACC96 /* Fredoka-SemiBold.ttf */; };
 		44D0D64D29CC99E800FACC96 /* Fredoka-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64829CC99E800FACC96 /* Fredoka-Light.ttf */; };
@@ -35,10 +39,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		447B059429D4834300714CE9 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		443DD62429D6032900412D7E /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		443DD62629D6442600412D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		443DD62729D6618800412D7E /* ActionImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionImageButton.swift; sourceTree = "<group>"; };
+		443DD62A29D6FA8800412D7E /* NumberModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NumberModel.xcdatamodel; sourceTree = "<group>"; };
+		4449780D29D4F5C200111F41 /* GameOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOne.swift; sourceTree = "<group>"; };
+		447B059429D4834300714CE9 /* NavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButton.swift; sourceTree = "<group>"; };
 		447B059629D4E3C700714CE9 /* CongratsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsView.swift; sourceTree = "<group>"; };
 		4489343929C88C3A0072EC28 /* BrailleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrailleView.swift; sourceTree = "<group>"; };
-		4489343C29C8A4970072EC28 /* BrailleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrailleModel.swift; sourceTree = "<group>"; };
+		4489343C29C8A4970072EC28 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		4499B7D629C355CA001D39EB /* ImPada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImPada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4499B7D929C355CA001D39EB /* ImPadaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImPadaApp.swift; sourceTree = "<group>"; };
 		4499B7DB29C355CA001D39EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,7 +61,7 @@
 		44D0D63329CB475900FACC96 /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
 		44D0D63529CB482B00FACC96 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		44D0D63729CB491F00FACC96 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
-		44D0D63E29CB4ADE00FACC96 /* AppImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImageButton.swift; sourceTree = "<group>"; };
+		44D0D63E29CB4ADE00FACC96 /* NavigationImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationImageButton.swift; sourceTree = "<group>"; };
 		44D0D64529CC8D8D00FACC96 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		44D0D64729CC99E800FACC96 /* Fredoka-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-SemiBold.ttf"; sourceTree = "<group>"; };
 		44D0D64829CC99E800FACC96 /* Fredoka-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Light.ttf"; sourceTree = "<group>"; };
@@ -74,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4449780C29D4F53200111F41 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				4449780D29D4F5C200111F41 /* GameOne.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
 		4489343829C88C1A0072EC28 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +109,8 @@
 		4489343B29C8A46E0072EC28 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4489343C29C8A4970072EC28 /* BrailleModel.swift */,
+				4489343C29C8A4970072EC28 /* DataController.swift */,
+				443DD62929D6FA8800412D7E /* NumberModel.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -116,6 +134,8 @@
 		4499B7D829C355CA001D39EB /* ImPada */ = {
 			isa = PBXGroup;
 			children = (
+				443DD62629D6442600412D7E /* Info.plist */,
+				4449780C29D4F53200111F41 /* Game */,
 				44D0D65329CCDA4600FACC96 /* NeuralNetwork */,
 				44D0D64229CC8D3300FACC96 /* Styles */,
 				4489343B29C8A46E0072EC28 /* Model */,
@@ -159,8 +179,10 @@
 		44D0D64029CB4AFB00FACC96 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				44D0D63E29CB4ADE00FACC96 /* AppImageButton.swift */,
-				447B059429D4834300714CE9 /* AppButton.swift */,
+				44D0D63E29CB4ADE00FACC96 /* NavigationImageButton.swift */,
+				447B059429D4834300714CE9 /* NavigationButton.swift */,
+				443DD62429D6032900412D7E /* ActionButton.swift */,
+				443DD62729D6618800412D7E /* ActionImageButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -293,24 +315,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				443DD62829D6618900412D7E /* ActionImageButton.swift in Sources */,
 				44D0D63629CB482B00FACC96 /* MusicPlayer.swift in Sources */,
 				447B059729D4E3C700714CE9 /* CongratsView.swift in Sources */,
+				4449780E29D4F5C200111F41 /* GameOne.swift in Sources */,
 				44D0D63429CB475900FACC96 /* SelectView.swift in Sources */,
 				44D0D65529CCDA7700FACC96 /* CanvasView.swift in Sources */,
 				44D0D63229CB470400FACC96 /* HomeView.swift in Sources */,
 				44D0D64629CC8D8D00FACC96 /* Colors.swift in Sources */,
+				443DD62B29D6FA8800412D7E /* NumberModel.xcdatamodeld in Sources */,
 				4489343A29C88C3A0072EC28 /* BrailleView.swift in Sources */,
 				4499B7E929C47F84001D39EB /* Haptics.swift in Sources */,
 				4499B7DC29C355CA001D39EB /* ContentView.swift in Sources */,
-				4489343D29C8A4970072EC28 /* BrailleModel.swift in Sources */,
+				4489343D29C8A4970072EC28 /* DataController.swift in Sources */,
 				44D0D63829CB491F00FACC96 /* ErrorView.swift in Sources */,
 				4499B7DA29C355CA001D39EB /* ImPadaApp.swift in Sources */,
-				447B059529D4834300714CE9 /* AppButton.swift in Sources */,
+				447B059529D4834300714CE9 /* NavigationButton.swift in Sources */,
 				44D0D63029CB469C00FACC96 /* OnboardingView.swift in Sources */,
 				4499B7EC29C48173001D39EB /* GridView.swift in Sources */,
-				44D0D63F29CB4ADE00FACC96 /* AppImageButton.swift in Sources */,
+				44D0D63F29CB4ADE00FACC96 /* NavigationImageButton.swift in Sources */,
 				44D0D62E29CB451C00FACC96 /* NumberView.swift in Sources */,
 				44D0D65229CCDA0C00FACC96 /* MNISTClassifier.mlmodel in Sources */,
+				443DD62529D6032900412D7E /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,11 +468,11 @@
 				DEVELOPMENT_TEAM = PST723S8CA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImPada/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "T-Number";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -474,11 +500,11 @@
 				DEVELOPMENT_TEAM = PST723S8CA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImPada/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "T-Number";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -517,6 +543,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		443DD62929D6FA8800412D7E /* NumberModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				443DD62A29D6FA8800412D7E /* NumberModel.xcdatamodel */,
+			);
+			currentVersion = 443DD62A29D6FA8800412D7E /* NumberModel.xcdatamodel */;
+			path = NumberModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4499B7CE29C355CA001D39EB /* Project object */;
 }

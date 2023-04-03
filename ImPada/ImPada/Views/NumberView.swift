@@ -14,15 +14,16 @@ struct Line{
 }
 
 struct NumberView: View {
+    @Binding var level: Int
     
     @State private var currLine = Line()
     @State private var lines: [Line] = []
     
     var body: some View {
         VStack{
-            AppImageButton(
+            NavigationImageButton(
                 icon: "TalkBox",
-                nextView: {AnyView(BrailleView())},
+                nextView: {AnyView(BrailleView(level: $level))},
                 width: 800,
                 height: 140
             )
@@ -57,8 +58,13 @@ struct NumberView: View {
                                 self.currLine = Line(points: [])
                             })
                     )
-                    .background(
+                    .mask(
                         Image("One")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                    )
+                    .background(
+                        Image("OneOutline")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                     )
