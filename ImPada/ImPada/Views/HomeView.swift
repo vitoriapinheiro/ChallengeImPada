@@ -17,14 +17,6 @@ struct HomeView: View {
     var body: some View {
         VStack {
             Spacer()
-            ActionButton(title: "Salvar dados",
-                         icon: "SquareButton",
-                         action: {
-                
-            },
-                         height: 60,
-                         width: 60,
-                         size: 24)
             NavigationButton(
                 icon: "SquareButton",
                 nextView: {AnyView(SelectView(level: $level))},
@@ -41,5 +33,10 @@ struct HomeView: View {
                 .clipped())
         .ignoresSafeArea(.all)
         .navigationBarBackButtonHidden()
+        .onAppear{
+            onboarding = true
+        }
     }
+    
+    
 }
