@@ -34,13 +34,13 @@ struct SelectView: View {
                 }
                 ZStack{
                     NavigationImageButton(
-                        icon: "Cards",
+                        icon: "Card\(level)",
                         nextView: {AnyView(NumberView(level: $level))},
                         width: 360,
                         height: 520
                     )
-                    Image("One")
-                        .frame(width: 110, height: 235)
+//                    Image("Card\(level)")
+//                        .frame(width: 110, height: 235)
                 }
                 if(level < 9 ){
                     ActionImageButton(

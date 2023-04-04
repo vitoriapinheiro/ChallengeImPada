@@ -70,6 +70,7 @@ struct ContentView: View {
             } else {
                 OnboardingView(onboarding: $onboarding)
             }
+//            NumberView()
         }.navigationViewStyle(.stack)
             .ignoresSafeArea()
             .navigationBarBackButtonHidden()

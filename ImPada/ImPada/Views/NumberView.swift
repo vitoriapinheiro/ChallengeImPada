@@ -21,18 +21,18 @@ struct NumberView: View {
     
     var body: some View {
         VStack{
-            NavigationImageButton(
-                icon: "TalkBox",
-                nextView: {AnyView(BrailleView(level: $level))},
-                width: 800,
-                height: 140
+            ActionImageButton(
+                icon: "ChatDraw\(level)",
+                action: {print("Olá, mestre dos números!\nVocê está pronto?")},
+                height: 140,
+                width: 800
             )
             .padding(.top, 90)
             .padding(.horizontal, 116)
             .padding(.bottom, 100)
             Spacer()
             HStack{
-                Image("One")
+                Image("Number\(level)")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 350, height: 350)
@@ -59,12 +59,12 @@ struct NumberView: View {
                             })
                     )
                     .mask(
-                        Image("One")
+                        Image("Number\(level)")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                     )
                     .background(
-                        Image("OneOutline")
+                        Image("Number\(level)Outline")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                     )

@@ -12,11 +12,11 @@ struct BrailleView: View {
     
     var body: some View {
         VStack{
-            NavigationImageButton(
-                icon: "TalkBox",
-                nextView: {AnyView(BrailleView(level: $level))},
-                width: 800,
-                height: 140
+            ActionImageButton(
+                icon: "ChatBraille\(level)",
+                action: {print("Olá, mestre dos números!\nVocê está pronto?")},
+                height: 140,
+                width: 800
             )
             .padding(.top, 90)
             .padding(.horizontal, 116)
