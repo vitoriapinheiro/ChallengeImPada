@@ -30,6 +30,7 @@
 		44D0D65029CC99E800FACC96 /* Fredoka-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64B29CC99E800FACC96 /* Fredoka-Bold.ttf */; };
 		94869FD329D32ADC0034EDF5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94869FD229D32ADC0034EDF5 /* GameScene.swift */; };
 		9493891629D31CFF00FE331C /* teste1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9493891529D31CFF00FE331C /* teste1.mp3 */; };
+		94CF286F29DB2EBF0053A687 /* testeBraille.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF286E29DB2EBF0053A687 /* testeBraille.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		44D0D64B29CC99E800FACC96 /* Fredoka-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Bold.ttf"; sourceTree = "<group>"; };
 		94869FD229D32ADC0034EDF5 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		9493891529D31CFF00FE331C /* teste1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = teste1.mp3; sourceTree = "<group>"; };
+		94CF286E29DB2EBF0053A687 /* testeBraille.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testeBraille.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				44D0D63329CB475900FACC96 /* SelectView.swift */,
 				44D0D63729CB491F00FACC96 /* ErrorView.swift */,
 				94869FD229D32ADC0034EDF5 /* GameScene.swift */,
+				94CF286E29DB2EBF0053A687 /* testeBraille.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				4499B7DC29C355CA001D39EB /* ContentView.swift in Sources */,
 				4489343D29C8A4970072EC28 /* BrailleModel.swift in Sources */,
 				44D0D63829CB491F00FACC96 /* ErrorView.swift in Sources */,
+				94CF286F29DB2EBF0053A687 /* testeBraille.swift in Sources */,
 				4499B7DA29C355CA001D39EB /* ImPadaApp.swift in Sources */,
 				44D0D63029CB469C00FACC96 /* OnboardingView.swift in Sources */,
 				4499B7EC29C48173001D39EB /* Grid.swift in Sources */,

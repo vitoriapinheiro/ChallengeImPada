@@ -15,7 +15,7 @@ struct ContentView: View {
     let screenHeight = UIScreen.main.bounds.height
     
     var scene: SKScene {
-        let scene = GameScene()
+        let scene = testeBraille()
         scene.size = CGSize(width: screenWidht, height: screenHeight)
         
         scene.scaleMode = .fill
