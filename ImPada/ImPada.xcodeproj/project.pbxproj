@@ -30,11 +30,13 @@
 		44D0D64E29CC99E800FACC96 /* Fredoka-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64929CC99E800FACC96 /* Fredoka-Regular.ttf */; };
 		44D0D64F29CC99E800FACC96 /* Fredoka-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64A29CC99E800FACC96 /* Fredoka-Medium.ttf */; };
 		44D0D65029CC99E800FACC96 /* Fredoka-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64B29CC99E800FACC96 /* Fredoka-Bold.ttf */; };
-		94869FD329D32ADC0034EDF5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94869FD229D32ADC0034EDF5 /* GameScene.swift */; };
-		9493891629D31CFF00FE331C /* teste1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9493891529D31CFF00FE331C /* teste1.mp3 */; };
-		94CF286F29DB2EBF0053A687 /* testeBraille.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF286E29DB2EBF0053A687 /* testeBraille.swift */; };
 		44D0D65229CCDA0C00FACC96 /* MNISTClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D65129CCDA0B00FACC96 /* MNISTClassifier.mlmodel */; };
 		44D0D65529CCDA7700FACC96 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D65429CCDA7700FACC96 /* CanvasView.swift */; };
+		94869FD329D32ADC0034EDF5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94869FD229D32ADC0034EDF5 /* GameScene.swift */; };
+		9493891629D31CFF00FE331C /* teste1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9493891529D31CFF00FE331C /* teste1.mp3 */; };
+		94CF286F29DB2EBF0053A687 /* testeBrailleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF286E29DB2EBF0053A687 /* testeBrailleView.swift */; };
+		94CF287129DC7F6B0053A687 /* newTestBraille.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF287029DC7F6B0053A687 /* newTestBraille.swift */; };
+		94CF287329DC92E30053A687 /* GridComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF287229DC92E30053A687 /* GridComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,11 +64,13 @@
 		44D0D64929CC99E800FACC96 /* Fredoka-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Regular.ttf"; sourceTree = "<group>"; };
 		44D0D64A29CC99E800FACC96 /* Fredoka-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Medium.ttf"; sourceTree = "<group>"; };
 		44D0D64B29CC99E800FACC96 /* Fredoka-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Bold.ttf"; sourceTree = "<group>"; };
-		94869FD229D32ADC0034EDF5 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		9493891529D31CFF00FE331C /* teste1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = teste1.mp3; sourceTree = "<group>"; };
-		94CF286E29DB2EBF0053A687 /* testeBraille.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testeBraille.swift; sourceTree = "<group>"; };
 		44D0D65129CCDA0B00FACC96 /* MNISTClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MNISTClassifier.mlmodel; sourceTree = "<group>"; };
 		44D0D65429CCDA7700FACC96 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		94869FD229D32ADC0034EDF5 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		9493891529D31CFF00FE331C /* teste1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = teste1.mp3; sourceTree = "<group>"; };
+		94CF286E29DB2EBF0053A687 /* testeBrailleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testeBrailleView.swift; sourceTree = "<group>"; };
+		94CF287029DC7F6B0053A687 /* newTestBraille.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newTestBraille.swift; sourceTree = "<group>"; };
+		94CF287229DC92E30053A687 /* GridComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +95,8 @@
 				44D0D63329CB475900FACC96 /* SelectView.swift */,
 				44D0D63729CB491F00FACC96 /* ErrorView.swift */,
 				94869FD229D32ADC0034EDF5 /* GameScene.swift */,
-				94CF286E29DB2EBF0053A687 /* testeBraille.swift */,
+				94CF286E29DB2EBF0053A687 /* testeBrailleView.swift */,
+				94CF287029DC7F6B0053A687 /* newTestBraille.swift */,
 				447B059629D4E3C700714CE9 /* CongratsView.swift */,
 			);
 			path = Views;
@@ -161,6 +166,7 @@
 				44D0D65629CCDA9800FACC96 /* Subviews */,
 				44D0D64129CB4B0200FACC96 /* Cards */,
 				44D0D64029CB4AFB00FACC96 /* Buttons */,
+				94CF287229DC92E30053A687 /* GridComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -313,14 +319,16 @@
 				4499B7E929C47F84001D39EB /* Haptics.swift in Sources */,
 				4499B7DC29C355CA001D39EB /* ContentView.swift in Sources */,
 				4489343D29C8A4970072EC28 /* BrailleModel.swift in Sources */,
+				94CF287129DC7F6B0053A687 /* newTestBraille.swift in Sources */,
 				44D0D63829CB491F00FACC96 /* ErrorView.swift in Sources */,
-				94CF286F29DB2EBF0053A687 /* testeBraille.swift in Sources */,
+				94CF286F29DB2EBF0053A687 /* testeBrailleView.swift in Sources */,
 				4499B7DA29C355CA001D39EB /* ImPadaApp.swift in Sources */,
 				447B059529D4834300714CE9 /* AppButton.swift in Sources */,
+				94CF287329DC92E30053A687 /* GridComponent.swift in Sources */,
 				44D0D63029CB469C00FACC96 /* OnboardingView.swift in Sources */,
-				4499B7EC29C48173001D39EB /* Grid.swift in Sources */,
+				4499B7EC29C48173001D39EB /* GridView.swift in Sources */,
 				94869FD329D32ADC0034EDF5 /* GameScene.swift in Sources */,
-				44D0D63F29CB4ADE00FACC96 /* Button.swift in Sources */,
+				44D0D63F29CB4ADE00FACC96 /* AppImageButton.swift in Sources */,
 				4499B7EC29C48173001D39EB /* GridView.swift in Sources */,
 				44D0D63F29CB4ADE00FACC96 /* AppImageButton.swift in Sources */,
 				44D0D62E29CB451C00FACC96 /* NumberView.swift in Sources */,

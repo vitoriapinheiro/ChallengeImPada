@@ -6,6 +6,7 @@
 //
 import SpriteKit
 import GameplayKit
+import SwiftUI
 
 class testeBraille: SKScene {
     var player : SKSpriteNode?
@@ -13,24 +14,33 @@ class testeBraille: SKScene {
     var circle1 : SKShapeNode?
     var circle2 : SKShapeNode?
     var grid : [SKShapeNode?] = []
-    
+    //let isActive: Bool
     
     
     override func didMove(to view: SKView) {
         
+//        if(isActive){
+//            circle = SKShapeNode(circleOfRadius: 50)
+//            circle?.fillColor = UIColor(red: 201/255, green: 51/255, blue: 124/255, alpha: 1) //medium pink
+//            addChild(circle!)
+//        } else {
+//            circle = SKShapeNode(circleOfRadius: 50)
+//            circle?.fillColor = UIColor(red: 115/255, green: 211/255, blue: 190/255, alpha: 1) //light green
+//            addChild(circle!)
+//        }
+        
         circle = SKShapeNode(circleOfRadius: 50)
-        circle?.fillColor = .gray
+        circle?.fillColor = UIColor(red: 201/255, green: 51/255, blue: 124/255, alpha: 1) //medium pink
         circle?.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
         addChild(circle!)
         
-        circle1 = SKShapeNode(circleOfRadius: 47)
-        circle1?.lineWidth = 3
-        circle1?.strokeColor = .gray
+        circle1 = SKShapeNode(circleOfRadius: 50)
+        circle1?.fillColor = UIColor(red: 115/255, green: 211/255, blue: 190/255, alpha: 1) //light green
         circle1?.position = CGPoint(x: self.frame.midX+140, y: self.frame.midY)
         addChild(circle1!)
          
         circle2 = SKShapeNode(circleOfRadius: 50)
-        circle2?.fillColor = .gray
+        circle?.fillColor = UIColor(red: 201/255, green: 51/255, blue: 124/255, alpha: 1) //medium pink
         circle2?.position = CGPoint(x: self.frame.midX+280, y: self.frame.midY)
         addChild(circle2!)
         
@@ -57,11 +67,12 @@ class testeBraille: SKScene {
         override func update(_ currentTime: TimeInterval) {
             for i in 0..<grid.count{
                 
-                if grid[i]!.position.x+10 <= player!.position.x+25 && grid[i]!.position.x-10 >= player!.position.x-25 && grid[i]!.position.y+10 <= player!.position.y+25 && grid[2]!.position.y-10 >= player!.position.y-25 {
-                    grid[i]!.fillColor = UIColor.systemPink
+                if grid[i]!.position.x+10 <= player!.position.x+25 && grid[i]!.position.x-10 >= player!.position.x-25 && grid[i]!.position.y+10 <= player!.position.y+25 && grid[i]!.position.y-10 >= player!.position.y-25 {
+                    grid[i]!.fillColor = UIColor(red: 12/255, green: 77/255, blue: 62/255, alpha: 1) // dark green
                     MusicPlayer.shared.startBackgroundMusic(backgroundMusicFileName: "teste1")
+                    HapticManager.instance.impact(style: .heavy)
                 } else {
-                    grid[i]!.fillColor = UIColor.gray
+                    grid[i]!.fillColor = UIColor(red: 115/255, green: 211/255, blue: 190/255, alpha: 1) //light green
                 }
                 
             }
