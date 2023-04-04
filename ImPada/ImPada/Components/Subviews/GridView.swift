@@ -35,8 +35,8 @@ struct CircleView: View {
     var body: some View {
         if(isActive){
             Circle()
-                .foregroundColor(.red)
-                .frame(width: 90, height: 90)
+                .foregroundColor(Color.mediumPink)
+                .frame(width: 100, height: 100)
                 .onTapGesture {
                     self.isPressed.toggle()
                     if self.isPressed {
@@ -48,9 +48,8 @@ struct CircleView: View {
         } else {
             
             Circle()
-                .foregroundColor(.gray)
-                .frame(width: 90, height: 90)
-            
+                .foregroundColor(Color.lightGreen)
+                .frame(width: 100, height: 100)
         }
     }
 }

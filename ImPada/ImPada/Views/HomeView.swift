@@ -10,11 +10,23 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         VStack {
-            Image(systemName: "circle")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Home View")
+            Spacer()
+            AppButton(
+                icon: "SquareButton",
+                nextView: {AnyView(SelectView())},
+                width: 140,
+                height: 148,
+                title: "Começar",
+                size: 56
+            )
+            .padding(.bottom, 170)
         }
-        .padding()
+        .background(
+            Image("OnboardingScenario")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .clipped())
+        .ignoresSafeArea(.all)
+        .navigationBarBackButtonHidden()
     }
 }

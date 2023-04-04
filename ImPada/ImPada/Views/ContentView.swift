@@ -33,5 +33,11 @@ struct ContentView: View {
             
         
         }
+        NavigationView{
+            OnboardingView()
+        }.navigationViewStyle(.stack)
+            .ignoresSafeArea()
+            .navigationBarBackButtonHidden()
+            .statusBarHidden()
     }
 }

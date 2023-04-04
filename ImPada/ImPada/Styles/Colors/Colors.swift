@@ -9,9 +9,9 @@ import SwiftUI
 
 extension Color{
     //Scenario
-    public static let darkBlur: Color = Color(UIColor(red: 46/255, green: 146/255, blue: 202/255, alpha: 1))
-    public static let mediumBlur: Color = Color(UIColor(red: 109/255, green: 217/255, blue: 241/255, alpha: 1))
-    public static let lightBlur: Color = Color(UIColor(red: 218/255, green: 243/255, blue: 249/255, alpha: 1))
+    public static let darkBlue: Color = Color(UIColor(red: 46/255, green: 146/255, blue: 202/255, alpha: 1))
+    public static let mediumBlue: Color = Color(UIColor(red: 109/255, green: 217/255, blue: 241/255, alpha: 1))
+    public static let lightBlue: Color = Color(UIColor(red: 218/255, green: 243/255, blue: 249/255, alpha: 1))
     
     public static let darkGreen: Color = Color(UIColor(red: 12/255, green: 77/255, blue: 62/255, alpha: 1))
     public static let mediumGreen: Color = Color(UIColor(red: 42/255, green: 129/255, blue: 110/255, alpha: 1))
