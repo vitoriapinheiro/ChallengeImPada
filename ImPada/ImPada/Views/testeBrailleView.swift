@@ -8,7 +8,7 @@ import SpriteKit
 import GameplayKit
 import SwiftUI
 
-class testeBraille: SKScene {
+class testeBrailleView: SKScene {
     var player : SKSpriteNode?
     var circle : SKShapeNode?
     var circle1 : SKShapeNode?
@@ -18,16 +18,6 @@ class testeBraille: SKScene {
     
     
     override func didMove(to view: SKView) {
-        
-//        if(isActive){
-//            circle = SKShapeNode(circleOfRadius: 50)
-//            circle?.fillColor = UIColor(red: 201/255, green: 51/255, blue: 124/255, alpha: 1) //medium pink
-//            addChild(circle!)
-//        } else {
-//            circle = SKShapeNode(circleOfRadius: 50)
-//            circle?.fillColor = UIColor(red: 115/255, green: 211/255, blue: 190/255, alpha: 1) //light green
-//            addChild(circle!)
-//        }
         
         circle = SKShapeNode(circleOfRadius: 50)
         circle?.fillColor = UIColor(red: 201/255, green: 51/255, blue: 124/255, alpha: 1) //medium pink

@@ -28,6 +28,7 @@ import SwiftUI
 
 @main
 struct ImPadaApp: App {
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

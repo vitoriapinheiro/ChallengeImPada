@@ -11,12 +11,11 @@ class newTesteBraille: SKScene {
     var player: SKSpriteNode?
     var circles: [SKShapeNode] = []
     let numRows = 3
-    let numCols = 4
+    let numCols = 2
     let circleSpacing: CGFloat = 20
     
     override func didMove(to view: SKView) {
 //        let circleRadius: CGFloat = (self.frame.width - CGFloat(numCols + 1) * circleSpacing) / CGFloat(numCols * 2)
-        
         for row in 0..<numRows {
             for col in 0..<numCols {
                 let circle = SKShapeNode(circleOfRadius: 50)

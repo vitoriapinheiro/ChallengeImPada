@@ -18,9 +18,7 @@ class GameScene: SKScene{
     
     override func didMove(to view: SKView) {
         // 1. create sprite
-        
-        let isActive: Bool
-        
+     
         
         square.size = CGSize(width: 100, height: 100)
         square.position = CGPoint(x: 200, y: 200)

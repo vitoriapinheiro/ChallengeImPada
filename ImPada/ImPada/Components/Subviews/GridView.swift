@@ -18,15 +18,14 @@ struct GridView: View{
                     CircleView(isActive: code[2])
 
                     }
-            VStack{
-                CircleView(isActive: code[3])
-                CircleView(isActive: code[4])
-                CircleView(isActive: code[5])
-                
-            }
+                VStack{
+                    CircleView(isActive: code[3])
+                    CircleView(isActive: code[4])
+                    CircleView(isActive: code[5])
                 }
-            }
         }
+    }
+}
 
 struct CircleView: View {
     let isActive: Bool
@@ -40,9 +39,8 @@ struct CircleView: View {
                 .onTapGesture {
                     self.isPressed.toggle()
                     if self.isPressed {
-                        //HapticManager.instance.impact(style: .heavy)
+                        HapticManager.instance.impact(style: .heavy)
                         MusicPlayer.shared.startBackgroundMusic(backgroundMusicFileName: "teste1")
-                        
                     }
                 }
         } else {
