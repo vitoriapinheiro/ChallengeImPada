@@ -70,6 +70,12 @@ struct NumberView: View {
                     )
                 }
                 .padding()
+                NavigationImageButton(
+                    icon: "PinkNext",
+                    nextView: {AnyView(GameView(level: $level))},
+                    width: 140,
+                    height: 148
+                )
             }
             .padding(.bottom, 160)
         }.background(

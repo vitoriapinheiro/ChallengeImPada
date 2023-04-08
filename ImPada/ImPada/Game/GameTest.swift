@@ -89,7 +89,7 @@ struct DragAndDropGame<Item: Draggable>: View {
 }
 
 // Example usage
-struct GameView: View {
+struct GameTest: View {
     let images = [
         DraggableImage(image: UIImage(named: "One")!),
         DraggableImage(image: UIImage(named: "Two")!),

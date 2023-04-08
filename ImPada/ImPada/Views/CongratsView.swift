@@ -46,5 +46,6 @@ struct CongratsView: View {
                 .aspectRatio(contentMode: .fill)
                 .clipped())
         .ignoresSafeArea(.all)
+        .navigationBarBackButtonHidden()
     }
 }

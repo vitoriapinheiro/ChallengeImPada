@@ -32,6 +32,9 @@ struct SelectView: View {
                     )
                     .padding(.trailing, 100)
                 }
+                else{
+                    Spacer().frame(width: 260)
+                }
                 ZStack{
                     NavigationImageButton(
                         icon: "Card\(level)",
@@ -39,8 +42,6 @@ struct SelectView: View {
                         width: 360,
                         height: 520
                     )
-//                    Image("Card\(level)")
-//                        .frame(width: 110, height: 235)
                 }
                 if(level < 9 ){
                     ActionImageButton(
@@ -54,6 +55,8 @@ struct SelectView: View {
                         width: 160
                     )
                         .padding(.leading, 100)
+                } else {
+                    Spacer().frame(width: 260)
                 }
             }
             .padding(.bottom, 170)

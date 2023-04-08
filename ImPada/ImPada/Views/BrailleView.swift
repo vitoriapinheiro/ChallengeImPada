@@ -44,5 +44,6 @@ struct BrailleView: View {
                 .aspectRatio(contentMode: .fill)
                 .clipped())
         .ignoresSafeArea(.all)
+        .navigationBarBackButtonHidden()
     }
 }
