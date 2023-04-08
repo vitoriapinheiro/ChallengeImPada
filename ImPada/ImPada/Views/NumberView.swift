@@ -14,24 +14,25 @@ struct Line{
 }
 
 struct NumberView: View {
+    @Binding var level: Int
     
     @State private var currLine = Line()
     @State private var lines: [Line] = []
     
     var body: some View {
         VStack{
-            AppImageButton(
-                icon: "TalkBox",
-                nextView: {AnyView(BrailleView())},
-                width: 800,
-                height: 140
+            ActionImageButton(
+                icon: "ChatDraw\(level)",
+                action: {print("Olá, mestre dos números!\nVocê está pronto?")},
+                height: 140,
+                width: 800
             )
             .padding(.top, 90)
             .padding(.horizontal, 116)
             .padding(.bottom, 100)
             Spacer()
             HStack{
-                Image("One")
+                Image("Number\(level)")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 350, height: 350)
@@ -57,13 +58,24 @@ struct NumberView: View {
                                 self.currLine = Line(points: [])
                             })
                     )
+                    .mask(
+                        Image("Number\(level)")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                    )
                     .background(
-                        Image("One")
+                        Image("Number\(level)Outline")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                     )
                 }
                 .padding()
+                NavigationImageButton(
+                    icon: "PinkNext",
+                    nextView: {AnyView(GameView(level: $level))},
+                    width: 140,
+                    height: 148
+                )
             }
             .padding(.bottom, 160)
         }.background(

@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct SelectView: View {
-    let level: [NumberModels] = numbers
+    @Binding var level: Int
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var Number: FetchedResults<Number>
     
     var body: some View {
         VStack{
@@ -17,27 +19,45 @@ struct SelectView: View {
                 .foregroundColor(Color.appBlack)
                 .padding(.top, 70)
             HStack {
-                AppImageButton(
-                    icon: "LeftArrow",
-                    nextView: {AnyView(NumberView())},
-                    width: 160,
-                    height: 140
-                ).padding(.trailing, 100)
+                if(level > 1){
+                    ActionImageButton(
+                        icon: "LeftArrow",
+                        action: {withAnimation{
+                            if level > 1{
+                                level -= 1
+                            }
+                        }},
+                        height: 140,
+                        width: 160
+                    )
+                    .padding(.trailing, 100)
+                }
+                else{
+                    Spacer().frame(width: 260)
+                }
                 ZStack{
-                    AppImageButton(
-                        icon: "Cards",
-                        nextView: {AnyView(NumberView())},
+                    NavigationImageButton(
+                        icon: "Card\(level)",
+                        nextView: {AnyView(NumberView(level: $level))},
                         width: 360,
                         height: 520
                     )
-                    Image("One")
                 }
-                AppImageButton(
-                    icon: "RightArrow",
-                    nextView: {AnyView(NumberView())},
-                    width: 160,
-                    height: 140
-                ).padding(.leading, 100)
+                if(level < 9 ){
+                    ActionImageButton(
+                        icon: "RightArrow",
+                        action: {withAnimation{
+                            if level < 9 {
+                                level += 1
+                            }
+                        }},
+                        height: 140,
+                        width: 160
+                    )
+                        .padding(.leading, 100)
+                } else {
+                    Spacer().frame(width: 260)
+                }
             }
             .padding(.bottom, 170)
         }

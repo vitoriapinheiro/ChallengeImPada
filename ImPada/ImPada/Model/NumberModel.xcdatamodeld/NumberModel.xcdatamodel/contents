@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22D68" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Number" representedClassName="Number" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="l0" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="l1" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="l2" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="l3" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="l4" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="l5" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="num" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="r0" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="r1" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="r2" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="r3" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="r4" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="r5" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+</model>

@@ -10,11 +10,22 @@ import SwiftUI
 struct ErrorView: View {
     var body: some View {
         VStack {
-            Image(systemName: "circle")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Error View")
-        }
-        .padding()
+            Spacer()
+            NavigationButton(
+                icon: "SquareButton",
+                nextView: {AnyView(ContentView())},
+                width: 140,
+                height: 148,
+                title: "Menu",
+                size: 56
+            )
+            .padding(.bottom, 170)
+        }.background(
+            Image("OnboardingScenario")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .clipped())
+        .ignoresSafeArea(.all)
+        .navigationBarBackButtonHidden()
     }
 }
