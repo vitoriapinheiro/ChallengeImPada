@@ -7,27 +7,30 @@
 import SwiftUI
 
 struct CongratsView: View {
+    @Binding var level: Int
+    
     var body: some View {
         VStack {
             Text("Você conseguiu!")
-                .font(.system(size: 56))
+                .font(.custom("Fredoka-Medium", size: 56))
+                .bold()
+                .foregroundColor(Color.appBlack)
                 .padding(.top, 90)
             Spacer()
-            Circle()
-                .foregroundColor(Color.mediumGreen)
-                .frame(width: 260, height: 260)
+            Image("Prize")
+                .frame(width: 290, height: 300)
             Spacer()
             HStack{
-                AppButton(icon: "RoundButton",
-                          nextView: {AnyView(SelectView())},
+                NavigationButton(icon: "RoundButton",
+                          nextView: {AnyView(SelectView(level: $level))},
                           width: 240,
                           height: 70,
                           title: "Menu",
                           size: 24
                 )
                 .padding(.trailing, 70)
-                AppButton(icon: "RoundButton",
-                          nextView: {AnyView(SelectView())},
+                NavigationButton(icon: "RoundButton",
+                          nextView: {AnyView(SelectView(level: $level))},
                           width: 240,
                           height: 70,
                           title: "Próximo",
@@ -44,5 +47,6 @@ struct CongratsView: View {
                 .aspectRatio(contentMode: .fill)
                 .clipped())
         .ignoresSafeArea(.all)
+        .navigationBarBackButtonHidden()
     }
 }

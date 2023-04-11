@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct BrailleView: View {
+    @Binding var level: Int
+    
     var body: some View {
         VStack{
-            AppImageButton(
-                icon: "TalkBox",
-                nextView: {AnyView(BrailleView())},
-                width: 800,
-                height: 140
+            ActionImageButton(
+                icon: "ChatBraille\(level)",
+                action: {print("Olá, mestre dos números!\nVocê está pronto?")},
+                height: 140,
+                width: 800
             )
             .padding(.top, 90)
             .padding(.horizontal, 116)
@@ -26,8 +28,8 @@ struct BrailleView: View {
             }
             HStack{
                 Spacer()
-                AppButton(icon: "RoundButton",
-                          nextView: {AnyView(CongratsView())},
+                NavigationButton(icon: "RoundButton",
+                          nextView: {AnyView(CongratsView(level: $level))},
                           width: 240,
                           height: 70,
                           title: "Finalizar",
@@ -42,5 +44,6 @@ struct BrailleView: View {
                 .aspectRatio(contentMode: .fill)
                 .clipped())
         .ignoresSafeArea(.all)
+        .navigationBarBackButtonHidden()
     }
 }

@@ -8,16 +8,27 @@
 import SwiftUI
 import SpriteKit
 
-
 struct ContentView: View {
+    @AppStorage("onboarding") var onboarding: Bool = false
+    @FetchRequest(sortDescriptors: []) var Number: FetchedResults<Number>
         
     var body: some View {
 
         NavigationView{
-            NewBrailleView(codeLeft: numbers[3].codeLeft, codeRight: numbers[3].codeRight)
+            if(onboarding){
+                HomeView(onboarding: $onboarding)
+            } else {
+                OnboardingView(onboarding: $onboarding)
+            }
         }.navigationViewStyle(.stack)
             .ignoresSafeArea()
             .navigationBarBackButtonHidden()
             .statusBarHidden()
     }
+}
+
+extension UIScreen{
+    static let screenWidth = UIScreen.main.bounds.size.width
+    static let screenHeight = UIScreen.main.bounds.size.height
+    static let screenSize = UIScreen.main.bounds.size
 }
