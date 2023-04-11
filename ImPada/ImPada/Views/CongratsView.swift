@@ -9,6 +9,8 @@ import SwiftUI
 struct CongratsView: View {
     @Binding var level: Int
     
+    @State var newLevel = 1
+    
     var body: some View {
         VStack {
             Text("Você conseguiu!")
@@ -22,7 +24,7 @@ struct CongratsView: View {
             Spacer()
             HStack{
                 NavigationButton(icon: "RoundButton",
-                          nextView: {AnyView(SelectView(level: $level))},
+                          nextView: {AnyView(SelectView(level: $newLevel))},
                           width: 240,
                           height: 70,
                           title: "Menu",
@@ -30,7 +32,7 @@ struct CongratsView: View {
                 )
                 .padding(.trailing, 70)
                 NavigationButton(icon: "RoundButton",
-                          nextView: {AnyView(SelectView(level: $level))},
+                          nextView: {AnyView(SelectView(level: $newLevel))},
                           width: 240,
                           height: 70,
                           title: "Próximo",
@@ -39,13 +41,6 @@ struct CongratsView: View {
                 
             }
             .padding(.bottom, 160)
-            .onAppear{
-                if(level == 9){
-                    level = 1
-                } else{
-                    level += 1
-                }
-            }
             
         }
         .background(
@@ -55,5 +50,12 @@ struct CongratsView: View {
                 .clipped())
         .ignoresSafeArea(.all)
         .navigationBarBackButtonHidden()
+        .task{
+            if( level < 9){
+                newLevel = level + 1
+            }
+        }
     }
+    
+
 }

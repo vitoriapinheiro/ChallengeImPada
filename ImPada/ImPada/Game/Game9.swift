@@ -84,7 +84,6 @@ struct Game9: View {
                 wonGame = false
             teeth = [false, false, false, false, false, false, false, false, false]
             }
-            NavigationLink(destination: CongratsView(level: $level), isActive: $wonGame){}
             }
         }
                     

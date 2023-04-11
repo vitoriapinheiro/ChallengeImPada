@@ -34,7 +34,6 @@ struct Game1: View {
             }
             .onEnded{ state in
                 if(abs(self.dinoPos.x - self.housePos.x) < 150 && abs(self.dinoPos.y - self.housePos.y) < 150){
-                    level += 1
                     wonGame = true
                 }
                 dinoPos = CGPoint(x: UIScreen.screenWidth*15/100, y: UIScreen.screenHeight*45/100)
