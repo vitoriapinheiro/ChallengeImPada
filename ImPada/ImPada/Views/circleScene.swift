@@ -39,7 +39,7 @@ class circleScene: SKScene {
         }
         addChild(circle)
         
-       // player = SKSpriteNode(texture: .none, size: CGSize(width: 50, height: 50))
+        //player = SKSpriteNode(texture: .none, size: CGSize(width: 50, height: 50))
         player = SKSpriteNode(color: .red, size: CGSize(width: 50, height: 50))
         player?.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
         addChild(player!)

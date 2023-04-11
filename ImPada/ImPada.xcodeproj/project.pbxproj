@@ -31,15 +31,13 @@
 		44D0D64F29CC99E800FACC96 /* Fredoka-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64A29CC99E800FACC96 /* Fredoka-Medium.ttf */; };
 		44D0D65029CC99E800FACC96 /* Fredoka-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64B29CC99E800FACC96 /* Fredoka-Bold.ttf */; };
 		44D0D65229CCDA0C00FACC96 /* MNISTClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D65129CCDA0B00FACC96 /* MNISTClassifier.mlmodel */; };
-		94869FD329D32ADC0034EDF5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94869FD229D32ADC0034EDF5 /* GameScene.swift */; };
 		9493891629D31CFF00FE331C /* teste1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9493891529D31CFF00FE331C /* teste1.mp3 */; };
-		94CF286F29DB2EBF0053A687 /* testeBrailleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF286E29DB2EBF0053A687 /* testeBrailleView.swift */; };
-		94CF287129DC7F6B0053A687 /* newTestBraille.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF287029DC7F6B0053A687 /* newTestBraille.swift */; };
 		94CF287329DC92E30053A687 /* GridComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF287229DC92E30053A687 /* GridComponent.swift */; };
 		94CF287529DC98C70053A687 /* NewBrailleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF287429DC98C70053A687 /* NewBrailleView.swift */; };
 		94CF287729DCA64D0053A687 /* AppBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF287629DCA64D0053A687 /* AppBanner.swift */; };
 		94CF287929DDBBF10053A687 /* SpriteKitContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF287829DDBBF10053A687 /* SpriteKitContainer.swift */; };
-		94CF287D29DDE8890053A687 /* CircleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF287C29DDE8890053A687 /* CircleScene.swift */; };
+		94CF287D29DDE8890053A687 /* circleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF287C29DDE8890053A687 /* circleScene.swift */; };
+		94CF288529E4F0100053A687 /* brailleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF288429E4F0100053A687 /* brailleScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,15 +66,13 @@
 		44D0D64A29CC99E800FACC96 /* Fredoka-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Medium.ttf"; sourceTree = "<group>"; };
 		44D0D64B29CC99E800FACC96 /* Fredoka-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Bold.ttf"; sourceTree = "<group>"; };
 		44D0D65129CCDA0B00FACC96 /* MNISTClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MNISTClassifier.mlmodel; sourceTree = "<group>"; };
-		94869FD229D32ADC0034EDF5 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		9493891529D31CFF00FE331C /* teste1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = teste1.mp3; sourceTree = "<group>"; };
-		94CF286E29DB2EBF0053A687 /* testeBrailleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testeBrailleView.swift; sourceTree = "<group>"; };
-		94CF287029DC7F6B0053A687 /* newTestBraille.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newTestBraille.swift; sourceTree = "<group>"; };
 		94CF287229DC92E30053A687 /* GridComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridComponent.swift; sourceTree = "<group>"; };
 		94CF287429DC98C70053A687 /* NewBrailleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBrailleView.swift; sourceTree = "<group>"; };
 		94CF287629DCA64D0053A687 /* AppBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBanner.swift; sourceTree = "<group>"; };
 		94CF287829DDBBF10053A687 /* SpriteKitContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitContainer.swift; sourceTree = "<group>"; };
-		94CF287C29DDE8890053A687 /* CircleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleScene.swift; sourceTree = "<group>"; };
+		94CF287C29DDE8890053A687 /* circleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circleScene.swift; sourceTree = "<group>"; };
+		94CF288429E4F0100053A687 /* brailleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brailleScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +98,8 @@
 				44D0D63329CB475900FACC96 /* SelectView.swift */,
 				44D0D63729CB491F00FACC96 /* ErrorView.swift */,
 				447B059629D4E3C700714CE9 /* CongratsView.swift */,
-				94869FD229D32ADC0034EDF5 /* GameScene.swift */,
-				94CF286E29DB2EBF0053A687 /* testeBrailleView.swift */,
-				94CF287029DC7F6B0053A687 /* newTestBraille.swift */,
-				94CF287C29DDE8890053A687 /* CircleScene.swift */,
+				94CF287C29DDE8890053A687 /* circleScene.swift */,
+				94CF288429E4F0100053A687 /* brailleScene.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -321,6 +315,7 @@
 				44D0D63629CB482B00FACC96 /* MusicPlayer.swift in Sources */,
 				447B059729D4E3C700714CE9 /* CongratsView.swift in Sources */,
 				44D0D63429CB475900FACC96 /* SelectView.swift in Sources */,
+				94CF288529E4F0100053A687 /* brailleScene.swift in Sources */,
 				44D0D63229CB470400FACC96 /* HomeView.swift in Sources */,
 				44D0D64629CC8D8D00FACC96 /* Colors.swift in Sources */,
 				4489343A29C88C3A0072EC28 /* BrailleView.swift in Sources */,
@@ -329,17 +324,14 @@
 				4499B7DC29C355CA001D39EB /* ContentView.swift in Sources */,
 				94CF287529DC98C70053A687 /* NewBrailleView.swift in Sources */,
 				4489343D29C8A4970072EC28 /* BrailleModel.swift in Sources */,
-				94CF287D29DDE8890053A687 /* CircleScene.swift in Sources */,
-				94CF287129DC7F6B0053A687 /* newTestBraille.swift in Sources */,
+				94CF287D29DDE8890053A687 /* circleScene.swift in Sources */,
 				44D0D63829CB491F00FACC96 /* ErrorView.swift in Sources */,
-				94CF286F29DB2EBF0053A687 /* testeBrailleView.swift in Sources */,
 				4499B7DA29C355CA001D39EB /* ImPadaApp.swift in Sources */,
 				94CF287729DCA64D0053A687 /* AppBanner.swift in Sources */,
 				447B059529D4834300714CE9 /* AppButton.swift in Sources */,
 				94CF287329DC92E30053A687 /* GridComponent.swift in Sources */,
 				44D0D63029CB469C00FACC96 /* OnboardingView.swift in Sources */,
 				4499B7EC29C48173001D39EB /* GridView.swift in Sources */,
-				94869FD329D32ADC0034EDF5 /* GameScene.swift in Sources */,
 				44D0D63F29CB4ADE00FACC96 /* AppImageButton.swift in Sources */,
 				4499B7EC29C48173001D39EB /* GridView.swift in Sources */,
 				44D0D63F29CB4ADE00FACC96 /* AppImageButton.swift in Sources */,

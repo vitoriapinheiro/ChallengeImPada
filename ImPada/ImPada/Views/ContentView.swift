@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
 
         NavigationView{
-            NewBrailleView()
+            NewBrailleView(codeLeft: numbers[3].codeLeft, codeRight: numbers[3].codeRight)
         }.navigationViewStyle(.stack)
             .ignoresSafeArea()
             .navigationBarBackButtonHidden()

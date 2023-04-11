@@ -42,10 +42,3 @@ struct SpriteKitContainer: UIViewRepresentable {
     }
     
 }
-
-//struct SpriteKitContainer_Previews: PreviewProvider {
-//    static var previews: some View {
-//        Text("Hello, World!")
-//    }
-//
-//}

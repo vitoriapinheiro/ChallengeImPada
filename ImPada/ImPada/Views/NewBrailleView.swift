@@ -9,6 +9,9 @@ import SwiftUI
 
 struct NewBrailleView: View {
     
+    let codeLeft: [Bool]
+    let codeRight: [Bool]
+    
     var body: some View {
         ZStack {
             Image("BlueScenario")
@@ -37,12 +40,18 @@ struct NewBrailleView: View {
                     .padding(.top, 90)
                     .padding(.leading, 55)
                     .padding(.trailing, 200)
-                    .padding(.bottom, 100)
+                    .padding(.bottom, 50)
                 }
                 
-                HStack(spacing: 70){
-                    GridComponent(codeLeft: numbers[1].codeLeft, codeRight: numbers[1].codeRight)
+                HStack(spacing: 50){
+                    
+                    SpriteKitContainer(scene: brailleScene(isActive: codeLeft[0]))
+                    SpriteKitContainer(scene: brailleScene(isActive: codeRight[0]))
+                    
+                    //GridComponent(codeLeft: numbers[1].codeLeft, codeRight: numbers[1].codeRight)
                 }
+                .padding(.leading, 300)
+                .padding(.trailing, 300)
                 .background(Color.clear)
                 
                 HStack{
@@ -57,6 +66,7 @@ struct NewBrailleView: View {
                     .padding(.trailing, 100)
                     .padding(.bottom, 70)
                 }
+                
             }
         }
         .ignoresSafeArea(.all)
@@ -64,8 +74,3 @@ struct NewBrailleView: View {
 }
 
 
-struct NewBrailleView_Previews: PreviewProvider {
-    static var previews: some View {
-        NewBrailleView()
-    }
-}
