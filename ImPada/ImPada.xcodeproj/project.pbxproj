@@ -50,7 +50,13 @@
 		44D0D64F29CC99E800FACC96 /* Fredoka-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64A29CC99E800FACC96 /* Fredoka-Medium.ttf */; };
 		44D0D65029CC99E800FACC96 /* Fredoka-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64B29CC99E800FACC96 /* Fredoka-Bold.ttf */; };
 		44D0D65229CCDA0C00FACC96 /* MNISTClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D65129CCDA0B00FACC96 /* MNISTClassifier.mlmodel */; };
-		44D0D65529CCDA7700FACC96 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D65429CCDA7700FACC96 /* CanvasView.swift */; };
+		9493891629D31CFF00FE331C /* teste1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9493891529D31CFF00FE331C /* teste1.mp3 */; };
+		94CF287329DC92E30053A687 /* GridComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF287229DC92E30053A687 /* GridComponent.swift */; };
+		94CF287529DC98C70053A687 /* NewBrailleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF287429DC98C70053A687 /* NewBrailleView.swift */; };
+		94CF287729DCA64D0053A687 /* AppBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF287629DCA64D0053A687 /* AppBanner.swift */; };
+		94CF287929DDBBF10053A687 /* SpriteKitContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF287829DDBBF10053A687 /* SpriteKitContainer.swift */; };
+		94CF287D29DDE8890053A687 /* circleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF287C29DDE8890053A687 /* circleScene.swift */; };
+		94CF288529E4F0100053A687 /* brailleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF288429E4F0100053A687 /* brailleScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,7 +105,13 @@
 		44D0D64A29CC99E800FACC96 /* Fredoka-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Medium.ttf"; sourceTree = "<group>"; };
 		44D0D64B29CC99E800FACC96 /* Fredoka-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Bold.ttf"; sourceTree = "<group>"; };
 		44D0D65129CCDA0B00FACC96 /* MNISTClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MNISTClassifier.mlmodel; sourceTree = "<group>"; };
-		44D0D65429CCDA7700FACC96 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		9493891529D31CFF00FE331C /* teste1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = teste1.mp3; sourceTree = "<group>"; };
+		94CF287229DC92E30053A687 /* GridComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridComponent.swift; sourceTree = "<group>"; };
+		94CF287429DC98C70053A687 /* NewBrailleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBrailleView.swift; sourceTree = "<group>"; };
+		94CF287629DCA64D0053A687 /* AppBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBanner.swift; sourceTree = "<group>"; };
+		94CF287829DDBBF10053A687 /* SpriteKitContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitContainer.swift; sourceTree = "<group>"; };
+		94CF287C29DDE8890053A687 /* circleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circleScene.swift; sourceTree = "<group>"; };
+		94CF288429E4F0100053A687 /* brailleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brailleScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,12 +158,15 @@
 			children = (
 				4499B7DB29C355CA001D39EB /* ContentView.swift */,
 				4489343929C88C3A0072EC28 /* BrailleView.swift */,
+				94CF287429DC98C70053A687 /* NewBrailleView.swift */,
 				44D0D62D29CB451C00FACC96 /* NumberView.swift */,
 				44D0D62F29CB469C00FACC96 /* OnboardingView.swift */,
 				44D0D63129CB470400FACC96 /* HomeView.swift */,
 				44D0D63329CB475900FACC96 /* SelectView.swift */,
 				44D0D63729CB491F00FACC96 /* ErrorView.swift */,
 				447B059629D4E3C700714CE9 /* CongratsView.swift */,
+				94CF287C29DDE8890053A687 /* circleScene.swift */,
+				94CF288429E4F0100053A687 /* brailleScene.swift */,
 				440B64B629DCCCB8008B663B /* GameView.swift */,
 			);
 			path = Views;
@@ -203,6 +218,7 @@
 		4499B7DF29C355CC001D39EB /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				9493891529D31CFF00FE331C /* teste1.mp3 */,
 				4499B7E029C355CC001D39EB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -213,6 +229,7 @@
 			children = (
 				44D0D63529CB482B00FACC96 /* MusicPlayer.swift */,
 				4499B7E829C47F84001D39EB /* Haptics.swift */,
+				94CF287829DDBBF10053A687 /* SpriteKitContainer.swift */,
 				449E017A29DB4E61000C0053 /* Converter.swift */,
 			);
 			path = Helpers;
@@ -231,6 +248,9 @@
 		44D0D64029CB4AFB00FACC96 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				44D0D63E29CB4ADE00FACC96 /* AppImageButton.swift */,
+				447B059429D4834300714CE9 /* AppButton.swift */,
+				94CF287629DCA64D0053A687 /* AppBanner.swift */,
 				44D0D63E29CB4ADE00FACC96 /* NavigationImageButton.swift */,
 				447B059429D4834300714CE9 /* NavigationButton.swift */,
 				443DD62429D6032900412D7E /* ActionButton.swift */,
@@ -280,7 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				4499B7EB29C48173001D39EB /* GridView.swift */,
-				44D0D65429CCDA7700FACC96 /* CanvasView.swift */,
+				94CF287229DC92E30053A687 /* GridComponent.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -349,6 +369,7 @@
 				44D0D64D29CC99E800FACC96 /* Fredoka-Light.ttf in Resources */,
 				44D0D65029CC99E800FACC96 /* Fredoka-Bold.ttf in Resources */,
 				44D0D64F29CC99E800FACC96 /* Fredoka-Medium.ttf in Resources */,
+				9493891629D31CFF00FE331C /* teste1.mp3 in Resources */,
 				4499B7DE29C355CC001D39EB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,7 +392,7 @@
 				440B64C029DD9D90008B663B /* ToyViewModel.swift in Sources */,
 				440B64A129DCADF6008B663B /* Game2.swift in Sources */,
 				44D0D63429CB475900FACC96 /* SelectView.swift in Sources */,
-				44D0D65529CCDA7700FACC96 /* CanvasView.swift in Sources */,
+				94CF288529E4F0100053A687 /* brailleScene.swift in Sources */,
 				44D0D63229CB470400FACC96 /* HomeView.swift in Sources */,
 				440B64A929DCAE57008B663B /* Game5.swift in Sources */,
 				44D0D64629CC8D8D00FACC96 /* Colors.swift in Sources */,
@@ -380,16 +401,28 @@
 				440B64B729DCCCB8008B663B /* GameView.swift in Sources */,
 				440B64A729DCAE4B008B663B /* Game4.swift in Sources */,
 				4489343A29C88C3A0072EC28 /* BrailleView.swift in Sources */,
+				94CF287929DDBBF10053A687 /* SpriteKitContainer.swift in Sources */,
 				4499B7E929C47F84001D39EB /* Haptics.swift in Sources */,
 				440B64BE29DD9BA1008B663B /* ToyContainer.swift in Sources */,
 				440B64B929DD91C0008B663B /* ToyModel.swift in Sources */,
 				440B64B029DCAEBF008B663B /* Game8.swift in Sources */,
 				440B64BC29DD93A1008B663B /* InteractfulToy.swift in Sources */,
 				4499B7DC29C355CA001D39EB /* ContentView.swift in Sources */,
+				94CF287529DC98C70053A687 /* NewBrailleView.swift in Sources */,
+				4489343D29C8A4970072EC28 /* BrailleModel.swift in Sources */,
+				94CF287D29DDE8890053A687 /* circleScene.swift in Sources */,
 				4489343D29C8A4970072EC28 /* DataController.swift in Sources */,
 				44D0D63829CB491F00FACC96 /* ErrorView.swift in Sources */,
 				449E017B29DB4E61000C0053 /* Converter.swift in Sources */,
 				4499B7DA29C355CA001D39EB /* ImPadaApp.swift in Sources */,
+				94CF287729DCA64D0053A687 /* AppBanner.swift in Sources */,
+				447B059529D4834300714CE9 /* AppButton.swift in Sources */,
+				94CF287329DC92E30053A687 /* GridComponent.swift in Sources */,
+				44D0D63029CB469C00FACC96 /* OnboardingView.swift in Sources */,
+				4499B7EC29C48173001D39EB /* GridView.swift in Sources */,
+				44D0D63F29CB4ADE00FACC96 /* AppImageButton.swift in Sources */,
+				4499B7EC29C48173001D39EB /* GridView.swift in Sources */,
+				44D0D63F29CB4ADE00FACC96 /* AppImageButton.swift in Sources */,
 				447B059529D4834300714CE9 /* NavigationButton.swift in Sources */,
 				44D0D63029CB469C00FACC96 /* OnboardingView.swift in Sources */,
 				4499B7EC29C48173001D39EB /* GridView.swift in Sources */,
@@ -525,7 +558,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ImPada/Preview Content\"";
-				DEVELOPMENT_TEAM = PST723S8CA;
+				DEVELOPMENT_TEAM = 38JDBWN7B4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImPada/Info.plist;
@@ -560,7 +593,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ImPada/Preview Content\"";
-				DEVELOPMENT_TEAM = PST723S8CA;
+				DEVELOPMENT_TEAM = 38JDBWN7B4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImPada/Info.plist;

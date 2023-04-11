@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SpriteKit
 
 struct ContentView: View {
     @AppStorage("onboarding") var onboarding: Bool = false
     @FetchRequest(sortDescriptors: []) var Number: FetchedResults<Number>
         
     var body: some View {
+
         NavigationView{
             if(onboarding){
                 HomeView(onboarding: $onboarding)
