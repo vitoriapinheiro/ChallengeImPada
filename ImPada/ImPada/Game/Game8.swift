@@ -84,6 +84,9 @@ struct Game8: View {
                     } else {
                         Spacer().frame(width: 150, height: 150)
                     }
+                }.onAppear{
+                    wonGame = false
+                stars = [true, true, true, true, true, true, true, true]
                 }
                 NavigationLink(destination: CongratsView(level: $level), isActive: $wonGame){}
             }

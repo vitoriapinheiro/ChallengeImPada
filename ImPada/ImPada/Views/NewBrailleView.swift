@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct NewBrailleView: View {
+    @Binding var level: Int
     
-    let codeLeft: [Bool]
-    let codeRight: [Bool]
+    @State var codeLeft: [Bool] = [false, false, true, true, true, true]
+    @State var codeRight: [Bool] = [true, false, false, false, false, false]
     
     var body: some View {
         ZStack {
@@ -20,9 +21,9 @@ struct NewBrailleView: View {
                 .clipped()
             VStack{
                 HStack{
-                    AppImageButton(
+                    NavigationImageButton(
                         icon: "GreenPrevious",
-                        nextView: {AnyView(NumberView())},
+                        nextView: {AnyView(SelectView(level: $level))},
                         width: 87,
                         height: 87
                     )
@@ -31,7 +32,7 @@ struct NewBrailleView: View {
                     
                     AppBanner(
                         icon: "TalkBox",
-                        nextView: {AnyView(BrailleView())},
+                        nextView: {AnyView(BrailleView(level: $level))},
                         width: 800,
                         height: 140,
                         title: "Entendendo em Braille o número 1",
@@ -56,8 +57,9 @@ struct NewBrailleView: View {
                 
                 HStack{
                     Spacer()
-                    AppButton(icon: "RoundButton",
-                              nextView: {AnyView(CongratsView())},
+                    NavigationButton(
+                            icon: "RoundButton",
+                              nextView: {AnyView(CongratsView(level: $level))},
                               width: 240,
                               height: 70,
                               title: "Finalizar",
@@ -65,11 +67,20 @@ struct NewBrailleView: View {
                     )
                     .padding(.trailing, 100)
                     .padding(.bottom, 70)
+                }.onAppear{
+                    updateLevel()
                 }
                 
             }
         }
         .ignoresSafeArea(.all)
+    }
+    
+    private func updateLevel(){
+        if level == 1 {
+            codeLeft = [false, false, true, true, true, true]
+            codeRight = [true, false, false, false, false, false]
+        }
     }
 }
 

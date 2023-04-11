@@ -39,6 +39,13 @@ struct CongratsView: View {
                 
             }
             .padding(.bottom, 160)
+            .onAppear{
+                if(level == 9){
+                    level = 1
+                } else{
+                    level += 1
+                }
+            }
             
         }
         .background(

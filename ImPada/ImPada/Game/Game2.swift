@@ -34,6 +34,10 @@ struct Game2: View {
                 Spacer().frame(width: 300)
             }
             NavigationLink(destination: CongratsView(level: $level), isActive: $wonGame){}
+        }.onAppear{
+            wonGame = false
+            Purple = true
+            Pink = true
         }
     }
     

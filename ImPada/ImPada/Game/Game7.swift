@@ -53,6 +53,10 @@ struct Game7: View {
                 }
                 
             }.frame(width: 700, height: 380)
+            .onAppear{
+                wonGame = false
+            keys = [false, false, false, false, false, false, false]
+            }
     }
     func playKey(index: Int){
         self.keys[index] = true

@@ -75,7 +75,10 @@ struct Game5: View {
                     Image("Sauro")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .frame(width: 220, height: 220)
+                        .frame(width: 220, height: 220).onAppear{
+                            wonGame = false
+                        meteors = [true, true, true, true, true]
+                        }
                     Spacer(minLength: 600)
                 }}.padding(.bottom, 50)
             NavigationLink(destination: CongratsView(level: $level), isActive: $wonGame){}
