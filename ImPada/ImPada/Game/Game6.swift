@@ -11,7 +11,40 @@ struct Game6: View {
     @Binding var level: Int
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader{ reader in
+            ZStack{
+                ActionImageButton(icon: "map 1",
+                                  action: {},
+                                  height: 489,
+                                  width: 766
+                )
+                ActionImageButton(icon: "map 2",
+                                  action: {},
+                                  height: 489,
+                                  width: 766
+                )
+                ActionImageButton(icon: "map 3",
+                                  action: {},
+                                  height: 489,
+                                  width: 766
+                )
+                ActionImageButton(icon: "map 4",
+                                  action: {},
+                                  height: 489,
+                                  width: 766
+                )
+                ActionImageButton(icon: "map 5",
+                                  action: {},
+                                  height: 489,
+                                  width: 766
+                )
+                ActionImageButton(icon: "map 6",
+                                  action: {},
+                                  height: 489,
+                                  width: 766
+                )
+            }
+        }.frame( width: 766, height: 489)
     }
 }
 

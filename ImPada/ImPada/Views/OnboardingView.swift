@@ -25,7 +25,13 @@ struct OnboardingView: View {
             .padding(.horizontal, 116)
             Spacer()
             HStack{
-              Spacer()
+                Image("Sauro")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 300, height: 300)
+                    .padding(.bottom, 50)
+                    .padding(.leading, 20)
+                Spacer()
                 if(changedText){
                     NavigationImageButton(
                         icon: "PinkNext",
@@ -33,8 +39,8 @@ struct OnboardingView: View {
                         width: 140,
                         height: 148
                     )
-                            .padding(.bottom, 160)
-                            .padding(.trailing, 100)
+                    .padding(.bottom, 160)
+                    .padding(.trailing, 100)
                 } else {
                     ActionImageButton(icon: "PinkNext",
                                       action: {changeTextBox()},

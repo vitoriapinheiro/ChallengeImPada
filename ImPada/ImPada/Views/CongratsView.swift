@@ -12,12 +12,13 @@ struct CongratsView: View {
     var body: some View {
         VStack {
             Text("Você conseguiu!")
-                .font(.system(size: 56))
+                .font(.custom("Fredoka-Medium", size: 56))
+                .bold()
+                .foregroundColor(Color.appBlack)
                 .padding(.top, 90)
             Spacer()
-            Circle()
-                .foregroundColor(Color.mediumGreen)
-                .frame(width: 260, height: 260)
+            Image("Prize")
+                .frame(width: 290, height: 300)
             Spacer()
             HStack{
                 NavigationButton(icon: "RoundButton",

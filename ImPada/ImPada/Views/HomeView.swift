@@ -17,6 +17,11 @@ struct HomeView: View {
     var body: some View {
         VStack {
             Spacer()
+            Image("AppTitle")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 850, height: 160)
+            Spacer().frame(height: 90)
             NavigationButton(
                 icon: "SquareButton",
                 nextView: {AnyView(SelectView(level: $level))},

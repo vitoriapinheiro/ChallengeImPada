@@ -11,76 +11,56 @@ struct Game4: View {
     @Binding var level: Int
     
     @State var wonGame: Bool = false
-    @State var meteors: [Bool] = [true, true, true, true]
+    @State var elements: [Bool] = [true, true, true, true]
+    
     var body: some View {
-        ZStack{
-            VStack{
-                HStack(alignment: .center, spacing: 20){
-                    Spacer()
-                if(meteors[0]){
-                    ActionImageButton(
-                        icon: ("Meteor"),
-                        action: {checkMeteors(index: 0)},
-                        height: 150, width: 150)
-                } else{
-                    Spacer().frame(width: 150, height: 150)
-                }
-                if(meteors[1]){
-                    ActionImageButton(
-                        icon: ("Meteor"),
-                        action: {checkMeteors(index: 1)},
-                        height: 200, width: 200)
-                } else {
-                    Spacer().frame(width: 200, height: 200)
-                }
-                    Spacer().frame(width: 50, height: 50)
-            }
+        VStack{
+            Spacer()
             HStack(alignment: .center, spacing: 20){
-                Spacer()
-                if(meteors[2]){
+                if(elements[0]){
                     ActionImageButton(
-                        icon: "Meteor",
-                        action: {checkMeteors(index: 2)},
-                        height: 200, width: 200)
+                        icon: withAnimation {("Water")},
+                        action: {checkElement(index: 0)},
+                        height: 300, width: 200)
                 } else {
-                    Spacer().frame(width: 200, height: 200)
+                    Spacer().frame(width: 200, height: 300)
                 }
-                if(meteors[3]){
+                if(elements[1]){
                     ActionImageButton(
-                        icon: "Meteor",
-                        action: {checkMeteors(index: 3)},
-                        height: 150, width: 150)
-                }  else {
-                    Spacer().frame(width: 150, height: 150)
+                        icon:  withAnimation {("Fire")},
+                        action: {checkElement(index: 1)},
+                        height: 300, width: 200)
+                } else {
+                    Spacer().frame(width: 200, height: 300)
                 }
+                if(elements[2]){
+                    ActionImageButton(
+                        icon:  withAnimation {("Earth")},
+                        action: {checkElement(index: 2)},
+                        height: 300, width: 200)
+                } else {
+                    Spacer().frame(width: 200, height: 300)
+                }
+                if(elements[3]){
+                    ActionImageButton(
+                        icon:  withAnimation {("Air")},
+                        action: {checkElement(index: 3)},
+                        height: 300, width: 200)
+                } else {
+                    Spacer().frame(width: 200, height: 300)
+                }
+                NavigationLink(destination: CongratsView(level: $level), isActive: $wonGame){}
             }
-        }.padding(.bottom, 100)
-                .padding(.trailing, 100)
-            VStack{
-                Spacer()
-                HStack(alignment: .firstTextBaseline){
-                    Image("House")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 300, height: 300)
-                        .padding(.leading, 30)
-                    Image("Sauro")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 220, height: 220)
-                    Spacer(minLength: 600)
-                }}.padding(.bottom, 50)
-        NavigationLink(destination: CongratsView(level: $level), isActive: $wonGame){}
+            Spacer().frame(height: 100)
+            
+        }
     }
-    }
-    func checkMeteors(index: Int){
-        self.meteors[index] = false
-        print(meteors[0], meteors[1], meteors[2], meteors[3])
-        if(meteors[0] && meteors[1] && meteors[2] && meteors[3]){
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){
+    
+    func checkElement(index: Int){
+        self.elements[index] = false
+        if(!elements[0] && !elements[1] && !elements[2] && !elements[3]){
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.75){
                 self.wonGame = true
             }
         }
-    }
-}
-
+    }}

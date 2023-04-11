@@ -50,11 +50,6 @@ struct Game1: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(width: self.houseW, height: self.houseH)
                     .position(self.housePos)
-//                Image("Sauro")
-//                    .resizable()
-//                    .aspectRatio(contentMode: .fill)
-//                    .frame(width: self.dinoW, height: self.dinoH)
-//                    .position(self.dinoPos)
                 InteractfulToy(
                     height: self.dinoH,
                     width: self.dinoW,
@@ -67,27 +62,8 @@ struct Game1: View {
             .onReceive(self.timer){ _ in
                 self.screenWidth = geo.size.width
                 self.screenHeight = geo.size.height
-//                gameControl()
             }
         }
         .edgesIgnoringSafeArea(.all)
     }
-//    func gameControl(){
-//        self.parametersCalculator()
-//    }
-//    
-//    func parametersCalculator(){
-//        self.dx = self.dinoPos.x - self.housePos.x
-//        self.dy = self.dinoPos.y - self.housePos.y
-//    }
-    
-    
-//    func colisionChecker(){
-//        if(abs(self.dinoPos.x - self.housePos.x) < 15 && abs(self.dinoPos.y - self.housePos.y) < 15){
-//            HapticManager.instance.notification(type: .success)
-//            return true
-//        } else {
-//            return false
-//        }
-//    }
 }

@@ -58,12 +58,14 @@ struct GameView: View {
     }
     
     private func checkBG(){
-        if(level == 1 || level == 4){
+        if(level == 1 || level == 5){
             self.bgImg = "OnboardingScenario"
         } else if (level == 2){
             self.bgImg = "SkyScenario"
         } else if (level == 3){
             self.bgImg = "SandScenario"
+        } else if (level == 8){
+            self.bgImg = "NightScenario"
         }
     }
 }

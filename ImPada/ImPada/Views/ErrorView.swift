@@ -11,17 +11,25 @@ struct ErrorView: View {
     var body: some View {
         VStack {
             Spacer()
+            Text("OPS!")
+                .font(.custom("Fredoka-Medium", size: 128))
+                .bold()
+                .foregroundColor(Color.appBlack)
+            Text("ALGO DEU ERRADO POR AQUI")
+                .font(.custom("Fredoka-Medium", size: 36))
+                .bold()
+                .foregroundColor(Color.appBlack)
             NavigationButton(
-                icon: "SquareButton",
+                icon: "RoundButton",
                 nextView: {AnyView(ContentView())},
-                width: 140,
-                height: 148,
+                width: 240,
+                height: 68,
                 title: "Menu",
-                size: 56
+                size: 24
             )
             .padding(.bottom, 170)
         }.background(
-            Image("OnboardingScenario")
+            Image("ErrorScenario")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .clipped())
