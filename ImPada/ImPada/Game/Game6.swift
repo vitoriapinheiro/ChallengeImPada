@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Game6: View {
     @Binding var level: Int
+    @State var wonGame: Bool = false
     
     var body: some View {
         GeometryReader{ reader in
@@ -43,8 +44,11 @@ struct Game6: View {
                                   height: 489,
                                   width: 766
                 )
-            }
-        }.frame( width: 766, height: 489)
+            }.frame( width: 766, height: 489)
+                .onAppear{
+                    wonGame = false
+                }
+        }
     }
 }
 

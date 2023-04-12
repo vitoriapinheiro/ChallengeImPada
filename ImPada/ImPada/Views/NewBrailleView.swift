@@ -19,7 +19,6 @@ struct NewBrailleView: View {
             self._level = level
             _BrailleVM = ObservedObject(wrappedValue: BrailleViewModel(level: level))
         }
-
     
     var body: some View {
         ZStack {
@@ -75,10 +74,19 @@ struct NewBrailleView: View {
                     )
                     .padding(.trailing, 100)
                     .padding(.bottom, 70)
+                }.onAppear{
+                    updateLevel()
                 }
                 
             }
         }
         .ignoresSafeArea(.all)
+    }
+    
+    private func updateLevel(){
+        if level == 1 {
+            codeLeft = [false, false, true, true, true, true]
+            codeRight = [true, false, false, false, false, false]
+        }
     }
 }

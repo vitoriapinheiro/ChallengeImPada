@@ -33,7 +33,7 @@ struct Game1: View {
                 dinoPos = state.location
             }
             .onEnded{ state in
-                if(abs(self.dinoPos.x - self.housePos.x) < 50 && abs(self.dinoPos.y - self.housePos.y) < 50){
+                if(abs(self.dinoPos.x - self.housePos.x) < 150 && abs(self.dinoPos.y - self.housePos.y) < 150){
                     wonGame = true
                 }
                 dinoPos = CGPoint(x: UIScreen.screenWidth*15/100, y: UIScreen.screenHeight*45/100)
@@ -62,6 +62,10 @@ struct Game1: View {
             .onReceive(self.timer){ _ in
                 self.screenWidth = geo.size.width
                 self.screenHeight = geo.size.height
+            }
+            .onAppear{
+                wonGame = false
+                dinoPos = CGPoint(x: UIScreen.screenWidth*15/100, y: UIScreen.screenHeight*45/100)
             }
         }
         .edgesIgnoringSafeArea(.all)

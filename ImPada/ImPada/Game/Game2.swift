@@ -33,7 +33,12 @@ struct Game2: View {
             else{
                 Spacer().frame(width: 300)
             }
+            
             NavigationLink(destination: NewBrailleView(level: $level), isActive: $wonGame){}
+        }.onAppear{
+            wonGame = false
+            Purple = true
+            Pink = true
         }
     }
     
