@@ -49,7 +49,6 @@
 		44D0D64E29CC99E800FACC96 /* Fredoka-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64929CC99E800FACC96 /* Fredoka-Regular.ttf */; };
 		44D0D64F29CC99E800FACC96 /* Fredoka-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64A29CC99E800FACC96 /* Fredoka-Medium.ttf */; };
 		44D0D65029CC99E800FACC96 /* Fredoka-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64B29CC99E800FACC96 /* Fredoka-Bold.ttf */; };
-		44D0D65229CCDA0C00FACC96 /* MNISTClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D65129CCDA0B00FACC96 /* MNISTClassifier.mlmodel */; };
 		9493891629D31CFF00FE331C /* teste1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9493891529D31CFF00FE331C /* teste1.mp3 */; };
 		94CF287329DC92E30053A687 /* GridComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF287229DC92E30053A687 /* GridComponent.swift */; };
 		94CF287529DC98C70053A687 /* NewBrailleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF287429DC98C70053A687 /* NewBrailleView.swift */; };
@@ -104,7 +103,6 @@
 		44D0D64929CC99E800FACC96 /* Fredoka-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Regular.ttf"; sourceTree = "<group>"; };
 		44D0D64A29CC99E800FACC96 /* Fredoka-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Medium.ttf"; sourceTree = "<group>"; };
 		44D0D64B29CC99E800FACC96 /* Fredoka-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Bold.ttf"; sourceTree = "<group>"; };
-		44D0D65129CCDA0B00FACC96 /* MNISTClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MNISTClassifier.mlmodel; sourceTree = "<group>"; };
 		9493891529D31CFF00FE331C /* teste1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = teste1.mp3; sourceTree = "<group>"; };
 		94CF287229DC92E30053A687 /* GridComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridComponent.swift; sourceTree = "<group>"; };
 		94CF287429DC98C70053A687 /* NewBrailleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBrailleView.swift; sourceTree = "<group>"; };
@@ -248,8 +246,6 @@
 		44D0D64029CB4AFB00FACC96 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				44D0D63E29CB4ADE00FACC96 /* AppImageButton.swift */,
-				447B059429D4834300714CE9 /* AppButton.swift */,
 				94CF287629DCA64D0053A687 /* AppBanner.swift */,
 				44D0D63E29CB4ADE00FACC96 /* NavigationImageButton.swift */,
 				447B059429D4834300714CE9 /* NavigationButton.swift */,
@@ -291,7 +287,6 @@
 		44D0D65329CCDA4600FACC96 /* NeuralNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				44D0D65129CCDA0B00FACC96 /* MNISTClassifier.mlmodel */,
 			);
 			path = NeuralNetwork;
 			sourceTree = "<group>";
@@ -409,26 +404,25 @@
 				440B64BC29DD93A1008B663B /* InteractfulToy.swift in Sources */,
 				4499B7DC29C355CA001D39EB /* ContentView.swift in Sources */,
 				94CF287529DC98C70053A687 /* NewBrailleView.swift in Sources */,
-				4489343D29C8A4970072EC28 /* BrailleModel.swift in Sources */,
+				4489343D29C8A4970072EC28 /* DataController.swift in Sources */,
 				94CF287D29DDE8890053A687 /* circleScene.swift in Sources */,
 				4489343D29C8A4970072EC28 /* DataController.swift in Sources */,
 				44D0D63829CB491F00FACC96 /* ErrorView.swift in Sources */,
 				449E017B29DB4E61000C0053 /* Converter.swift in Sources */,
 				4499B7DA29C355CA001D39EB /* ImPadaApp.swift in Sources */,
 				94CF287729DCA64D0053A687 /* AppBanner.swift in Sources */,
-				447B059529D4834300714CE9 /* AppButton.swift in Sources */,
+				447B059529D4834300714CE9 /* NavigationButton.swift in Sources */,
 				94CF287329DC92E30053A687 /* GridComponent.swift in Sources */,
 				44D0D63029CB469C00FACC96 /* OnboardingView.swift in Sources */,
 				4499B7EC29C48173001D39EB /* GridView.swift in Sources */,
-				44D0D63F29CB4ADE00FACC96 /* AppImageButton.swift in Sources */,
+				44D0D63F29CB4ADE00FACC96 /* NavigationImageButton.swift in Sources */,
 				4499B7EC29C48173001D39EB /* GridView.swift in Sources */,
-				44D0D63F29CB4ADE00FACC96 /* AppImageButton.swift in Sources */,
+				44D0D63F29CB4ADE00FACC96 /* NavigationImageButton.swift in Sources */,
 				447B059529D4834300714CE9 /* NavigationButton.swift in Sources */,
 				44D0D63029CB469C00FACC96 /* OnboardingView.swift in Sources */,
 				4499B7EC29C48173001D39EB /* GridView.swift in Sources */,
 				44D0D63F29CB4ADE00FACC96 /* NavigationImageButton.swift in Sources */,
 				44D0D62E29CB451C00FACC96 /* NumberView.swift in Sources */,
-				44D0D65229CCDA0C00FACC96 /* MNISTClassifier.mlmodel in Sources */,
 				443DD62529D6032900412D7E /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -558,7 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ImPada/Preview Content\"";
-				DEVELOPMENT_TEAM = 38JDBWN7B4;
+				DEVELOPMENT_TEAM = PST723S8CA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImPada/Info.plist;
@@ -578,7 +572,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -593,7 +587,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ImPada/Preview Content\"";
-				DEVELOPMENT_TEAM = 38JDBWN7B4;
+				DEVELOPMENT_TEAM = PST723S8CA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImPada/Info.plist;
@@ -613,7 +607,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;

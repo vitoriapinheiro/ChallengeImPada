@@ -44,6 +44,7 @@ struct Game6: View {
                                   height: 489,
                                   width: 766
                 )
+                NavigationLink(destination: BrailleView(level: $level), isActive: $wonGame){}
             }.frame( width: 766, height: 489)
                 .onAppear{
                     wonGame = false

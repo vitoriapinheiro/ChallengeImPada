@@ -57,6 +57,7 @@ struct Game7: View {
                 wonGame = false
             keys = [false, false, false, false, false, false, false]
             }
+        NavigationLink(destination: BrailleView(level: $level), isActive: $wonGame){}
     }
     func playKey(index: Int){
         self.keys[index] = true

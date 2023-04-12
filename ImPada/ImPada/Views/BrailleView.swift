@@ -10,6 +10,9 @@ import SwiftUI
 struct BrailleView: View {
     @Binding var level: Int
     
+    @State var codeLeft: [Bool] = [false, false, true, true, true, true]
+    @State var codeRight: [Bool] = [true, false, false, false, false, false]
+    
     var body: some View {
         VStack{
             ActionImageButton(
@@ -23,8 +26,8 @@ struct BrailleView: View {
             .padding(.bottom, 100)
             Spacer()
             HStack(spacing: 70){
-                GridView(code: [false, false, true, true, true, true])
-                GridView(code: [true, false, false, false, false, false])
+                GridView(code: codeLeft)
+                GridView(code: codeRight)
             }
             HStack{
                 Spacer()
@@ -45,5 +48,36 @@ struct BrailleView: View {
                 .clipped())
         .ignoresSafeArea(.all)
         .navigationBarBackButtonHidden()
+    }
+    
+    private func updateLevel(){
+        if level == 1 {
+            self.codeLeft = [false, false, true, true, true, true]
+            self.codeRight = [true, false, false, false, false, false]
+        } else if level == 2 {
+            self.codeLeft = [false, false, true, true, true, true]
+            self.codeRight = [true, true, false, false, false, false]
+        } else if level == 3 {
+            self.codeLeft = [false, false, true, true, true, true]
+            self.codeRight = [true, false, false, true, false, false]
+        } else if level == 4 {
+            self.codeLeft = [false, false, true, true, true, true]
+            self.codeRight = [true, false, false, true, true, false]
+        } else if level == 5 {
+            self.codeLeft = [false, false, true, true, true, true]
+            self.codeRight = [true, false, false, false, true, false]
+        } else if level == 6 {
+            self.codeLeft = [false, false, true, true, true, true]
+            self.codeRight = [true, true, false, true, false, false]
+        } else if level == 7 {
+            self.codeLeft = [false, false, true, true, true, true]
+            self.codeRight = [true, true, false, true, true, false]
+        } else if level == 8 {
+            self.codeLeft = [false, false, true, true, true, true]
+            self.codeRight = [true, true, false, false, true, false]
+        } else if level == 9 {
+            self.codeLeft = [false, false, true, true, true, true]
+            self.codeRight = [false, true, false, true, true, false]
+        }
     }
 }
