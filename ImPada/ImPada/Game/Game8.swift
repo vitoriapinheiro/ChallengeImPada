@@ -85,7 +85,7 @@ struct Game8: View {
                         Spacer().frame(width: 150, height: 150)
                     }
                 }
-                NavigationLink(destination: CongratsView(level: $level), isActive: $wonGame){}
+                NavigationLink(destination: NewBrailleView(level: $level), isActive: $wonGame){}
             }
             .padding(.leading, 90)
             .padding(.trailing, 90)

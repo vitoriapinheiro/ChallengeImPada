@@ -44,7 +44,7 @@ struct Game1: View {
     var body: some View {
         GeometryReader{ geo in
             ZStack {
-                NavigationLink(destination: CongratsView(level: $level), isActive: $wonGame){}
+                NavigationLink(destination: NewBrailleView(level: $level), isActive: $wonGame){}
                 Image("House")
                     .resizable()
                     .aspectRatio(contentMode: .fill)

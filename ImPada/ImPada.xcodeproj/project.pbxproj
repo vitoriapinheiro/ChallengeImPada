@@ -57,6 +57,7 @@
 		94CF287929DDBBF10053A687 /* SpriteKitContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF287829DDBBF10053A687 /* SpriteKitContainer.swift */; };
 		94CF287D29DDE8890053A687 /* circleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF287C29DDE8890053A687 /* circleScene.swift */; };
 		94CF288529E4F0100053A687 /* brailleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF288429E4F0100053A687 /* brailleScene.swift */; };
+		94CF288829E5B5F20053A687 /* BrailleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF288729E5B5F20053A687 /* BrailleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +113,7 @@
 		94CF287829DDBBF10053A687 /* SpriteKitContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitContainer.swift; sourceTree = "<group>"; };
 		94CF287C29DDE8890053A687 /* circleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circleScene.swift; sourceTree = "<group>"; };
 		94CF288429E4F0100053A687 /* brailleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brailleScene.swift; sourceTree = "<group>"; };
+		94CF288729E5B5F20053A687 /* BrailleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrailleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,15 +161,15 @@
 				4499B7DB29C355CA001D39EB /* ContentView.swift */,
 				4489343929C88C3A0072EC28 /* BrailleView.swift */,
 				94CF287429DC98C70053A687 /* NewBrailleView.swift */,
+				94CF288429E4F0100053A687 /* brailleScene.swift */,
 				44D0D62D29CB451C00FACC96 /* NumberView.swift */,
 				44D0D62F29CB469C00FACC96 /* OnboardingView.swift */,
 				44D0D63129CB470400FACC96 /* HomeView.swift */,
 				44D0D63329CB475900FACC96 /* SelectView.swift */,
 				44D0D63729CB491F00FACC96 /* ErrorView.swift */,
 				447B059629D4E3C700714CE9 /* CongratsView.swift */,
-				94CF287C29DDE8890053A687 /* circleScene.swift */,
-				94CF288429E4F0100053A687 /* brailleScene.swift */,
 				440B64B629DCCCB8008B663B /* GameView.swift */,
+				94CF287C29DDE8890053A687 /* circleScene.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +179,7 @@
 			children = (
 				4489343C29C8A4970072EC28 /* DataController.swift */,
 				443DD62929D6FA8800412D7E /* NumberModel.xcdatamodeld */,
+				94CF288729E5B5F20053A687 /* BrailleViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -248,8 +251,6 @@
 		44D0D64029CB4AFB00FACC96 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				44D0D63E29CB4ADE00FACC96 /* AppImageButton.swift */,
-				447B059429D4834300714CE9 /* AppButton.swift */,
 				94CF287629DCA64D0053A687 /* AppBanner.swift */,
 				44D0D63E29CB4ADE00FACC96 /* NavigationImageButton.swift */,
 				447B059429D4834300714CE9 /* NavigationButton.swift */,
@@ -401,6 +402,7 @@
 				440B64B729DCCCB8008B663B /* GameView.swift in Sources */,
 				440B64A729DCAE4B008B663B /* Game4.swift in Sources */,
 				4489343A29C88C3A0072EC28 /* BrailleView.swift in Sources */,
+				94CF288829E5B5F20053A687 /* BrailleViewModel.swift in Sources */,
 				94CF287929DDBBF10053A687 /* SpriteKitContainer.swift in Sources */,
 				4499B7E929C47F84001D39EB /* Haptics.swift in Sources */,
 				440B64BE29DD9BA1008B663B /* ToyContainer.swift in Sources */,
@@ -409,20 +411,20 @@
 				440B64BC29DD93A1008B663B /* InteractfulToy.swift in Sources */,
 				4499B7DC29C355CA001D39EB /* ContentView.swift in Sources */,
 				94CF287529DC98C70053A687 /* NewBrailleView.swift in Sources */,
-				4489343D29C8A4970072EC28 /* BrailleModel.swift in Sources */,
+				4489343D29C8A4970072EC28 /* DataController.swift in Sources */,
 				94CF287D29DDE8890053A687 /* circleScene.swift in Sources */,
 				4489343D29C8A4970072EC28 /* DataController.swift in Sources */,
 				44D0D63829CB491F00FACC96 /* ErrorView.swift in Sources */,
 				449E017B29DB4E61000C0053 /* Converter.swift in Sources */,
 				4499B7DA29C355CA001D39EB /* ImPadaApp.swift in Sources */,
 				94CF287729DCA64D0053A687 /* AppBanner.swift in Sources */,
-				447B059529D4834300714CE9 /* AppButton.swift in Sources */,
+				447B059529D4834300714CE9 /* NavigationButton.swift in Sources */,
 				94CF287329DC92E30053A687 /* GridComponent.swift in Sources */,
 				44D0D63029CB469C00FACC96 /* OnboardingView.swift in Sources */,
 				4499B7EC29C48173001D39EB /* GridView.swift in Sources */,
-				44D0D63F29CB4ADE00FACC96 /* AppImageButton.swift in Sources */,
+				44D0D63F29CB4ADE00FACC96 /* NavigationImageButton.swift in Sources */,
 				4499B7EC29C48173001D39EB /* GridView.swift in Sources */,
-				44D0D63F29CB4ADE00FACC96 /* AppImageButton.swift in Sources */,
+				44D0D63F29CB4ADE00FACC96 /* NavigationImageButton.swift in Sources */,
 				447B059529D4834300714CE9 /* NavigationButton.swift in Sources */,
 				44D0D63029CB469C00FACC96 /* OnboardingView.swift in Sources */,
 				4499B7EC29C48173001D39EB /* GridView.swift in Sources */,
