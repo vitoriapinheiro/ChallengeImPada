@@ -13,42 +13,61 @@ struct Game6: View {
     
     var body: some View {
         GeometryReader{ reader in
-            ZStack{
-                ActionImageButton(icon: "map 1",
-                                  action: {},
-                                  height: 489,
-                                  width: 766
-                )
-                ActionImageButton(icon: "map 2",
-                                  action: {},
-                                  height: 489,
-                                  width: 766
-                )
-                ActionImageButton(icon: "map 3",
-                                  action: {},
-                                  height: 489,
-                                  width: 766
-                )
-                ActionImageButton(icon: "map 4",
-                                  action: {},
-                                  height: 489,
-                                  width: 766
-                )
-                ActionImageButton(icon: "map 5",
-                                  action: {},
-                                  height: 489,
-                                  width: 766
-                )
-                ActionImageButton(icon: "map 6",
-                                  action: {},
-                                  height: 489,
-                                  width: 766
-                )
-            }.frame( width: 766, height: 489)
-                .onAppear{
-                    wonGame = false
-                }
+            VStack{
+                Spacer()
+                    .frame(height: 350)
+                HStack{
+                    
+                    ActionImageButton(icon: "map 1",
+                                      action: {},
+                                      height: 200,
+                                      width: 200
+                    )
+                    ActionImageButton(icon: "map 4",
+                                      action: {},
+                                      height: 200,
+                                      width: 200
+                    )
+                    ActionImageButton(icon: "map 5",
+                                      action: {},
+                                      height: 200,
+                                      width: 200
+                    )
+                }//.background(Color.red)
+                
+                Spacer()
+                    .frame(height: 4)
+                
+                HStack{
+                    ActionImageButton(icon: "map 2",
+                                      action: {},
+                                      height: 200,
+                                      width: 200
+                    )
+                    ActionImageButton(icon: "map 3",
+                                      action: {},
+                                      height: 200,
+                                      width: 200
+                    )
+                    ActionImageButton(icon: "map 6",
+                                      action: {},
+                                      height: 200,
+                                      width: 200
+                    )
+                    
+                }//.background(Color.blue)
+                    
+                
+                
+                
+            }.frame(height: 170).padding(.leading, 200)
+                                .onAppear{
+                                    wonGame = false
+            }
         }
     }
 }
+    
+
+
 

@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "tecla preta 1.png",
+      "filename" : "BlackKey.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "tecla preta 1@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "tecla preta 1@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -26,26 +26,26 @@ struct Game9: View {
                             self.teeth[0] ? ("MUDT"): ("MCUT")
                         },
                         action: {checkTeeth(index: 0)},
-                        height: 75, width: 75)
+                        height: 65, width: 65)
                     ActionImageButton(
                         icon:  withAnimation {
                             self.teeth[1] ? ("MUDT"): ("MCUT")
                         },
                         action: {checkTeeth(index: 1)},
-                        height: 75, width: 75)
+                        height: 65, width: 65)
                     ActionImageButton(
                         icon:  withAnimation {
                             self.teeth[2] ? ("MUDT"): ("MCUT")
                         },
                         action: {checkTeeth(index: 2)},
-                        height: 75, width: 75)
+                        height: 65, width: 65)
                     ActionImageButton(
                         icon:  withAnimation {
                             self.teeth[3] ? ("MUDT"): ("MCUT")
                         },
                         action: {checkTeeth(index: 3)},
-                        height: 75, width: 75)
-                }
+                        height: 65, width: 65)
+                }.offset(y: -13)
                 .padding(.top, 140)
                 HStack(alignment: .center, spacing: 10){
                     ActionImageButton(
@@ -53,32 +53,32 @@ struct Game9: View {
                             self.teeth[4] ? ("RDBT"): ("RCBT")
                         },
                         action: {checkTeeth(index: 4)},
-                        height: 75, width: 75)
+                        height: 65, width: 65)
                     ActionImageButton(
                         icon:  withAnimation {
                             self.teeth[5] ? ("MDBT"): ("MCBT")
                         },
                         action: {checkTeeth(index: 5)},
-                        height: 75, width: 75)
+                        height: 65, width: 65)
                     ActionImageButton(
                         icon:  withAnimation {
                             self.teeth[6] ? ("MDBT"): ("MCBT")
                         },
                         action: {checkTeeth(index: 6)},
-                        height: 75, width: 75)
+                        height: 65, width: 65)
                     ActionImageButton(
                         icon:  withAnimation {
                             self.teeth[7] ? ("MDBT"): ("MCBT")
                         },
                         action: {checkTeeth(index: 7)},
-                        height: 75, width: 75)
+                        height: 65, width: 65)
                     ActionImageButton(
                         icon:  withAnimation {
                             self.teeth[8] ? ("LDBT"): ("LCBT")
                         },
                         action: {checkTeeth(index: 8)},
-                        height: 75, width: 75)
-                }
+                        height: 65, width: 65)
+                }.offset(y: 6)
                 .padding(.top, 20)
             }.onAppear{
                 wonGame = false
