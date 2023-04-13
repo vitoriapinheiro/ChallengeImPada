@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "ChatLevel6.png",
+      "filename" : "dino flag 2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "ChatLevel6@2x.png",
+      "filename" : "dino flag 2@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "ChatLevel6@3x.png",
+      "filename" : "dino flag 2@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -13,7 +13,7 @@ struct ImPadaApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LaunchView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }

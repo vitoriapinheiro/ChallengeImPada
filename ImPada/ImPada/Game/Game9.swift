@@ -78,11 +78,12 @@ struct Game9: View {
                         },
                         action: {checkTeeth(index: 8)},
                         height: 65, width: 65)
+                    NavigationLink(destination: CongratsView(level: $level), isActive: $wonGame){}
                 }.offset(y: 6)
                 .padding(.top, 20)
             }.onAppear{
                 wonGame = false
-            teeth = [false, false, false, false, false, false, false, false, false]
+                teeth = [true, true, true, true, true, true, true, true, true]
             }
             }
         }
@@ -90,7 +91,7 @@ struct Game9: View {
                     func checkTeeth(index: Int){
                         self.teeth[index] = false
                         if(!self.teeth[0] && !self.teeth[1] && !self.teeth[2] && !self.teeth[3] && !self.teeth[4] && !self.teeth[5] && !self.teeth[6] && !self.teeth[7] && !self.teeth[8]){
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.75){
+                            DispatchQueue.main.asyncAfter(deadline: .now()){
                                 self.wonGame = true
                             }
                         }

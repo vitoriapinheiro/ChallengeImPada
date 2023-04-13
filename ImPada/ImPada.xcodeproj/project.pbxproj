@@ -50,6 +50,18 @@
 		44D0D64F29CC99E800FACC96 /* Fredoka-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64A29CC99E800FACC96 /* Fredoka-Medium.ttf */; };
 		44D0D65029CC99E800FACC96 /* Fredoka-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64B29CC99E800FACC96 /* Fredoka-Bold.ttf */; };
 		44D0D65229CCDA0C00FACC96 /* MNISTClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D65129CCDA0B00FACC96 /* MNISTClassifier.mlmodel */; };
+		44E4C7D029E7A3E700CDB7F5 /* si.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44E4C7C529E7A3E600CDB7F5 /* si.mp3 */; };
+		44E4C7D129E7A3E700CDB7F5 /* re.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44E4C7C629E7A3E600CDB7F5 /* re.mp3 */; };
+		44E4C7D229E7A3E700CDB7F5 /* Button.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44E4C7C729E7A3E600CDB7F5 /* Button.mp3 */; };
+		44E4C7D329E7A3E700CDB7F5 /* sol.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44E4C7C829E7A3E600CDB7F5 /* sol.mp3 */; };
+		44E4C7D429E7A3E700CDB7F5 /* do.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44E4C7C929E7A3E600CDB7F5 /* do.mp3 */; };
+		44E4C7D529E7A3E700CDB7F5 /* Star.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44E4C7CA29E7A3E600CDB7F5 /* Star.mp3 */; };
+		44E4C7D629E7A3E700CDB7F5 /* fa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44E4C7CB29E7A3E700CDB7F5 /* fa.mp3 */; };
+		44E4C7D729E7A3E700CDB7F5 /* la.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44E4C7CC29E7A3E700CDB7F5 /* la.mp3 */; };
+		44E4C7D829E7A3E700CDB7F5 /* mi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44E4C7CD29E7A3E700CDB7F5 /* mi.mp3 */; };
+		44E4C7D929E7A3E700CDB7F5 /* Braille.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44E4C7CE29E7A3E700CDB7F5 /* Braille.mp3 */; };
+		44E4C7DA29E7A3E700CDB7F5 /* Balloon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44E4C7CF29E7A3E700CDB7F5 /* Balloon.mp3 */; };
+		44E4C7DD29E7C2E300CDB7F5 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E4C7DC29E7C2E300CDB7F5 /* LaunchView.swift */; };
 		9493891629D31CFF00FE331C /* teste1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9493891529D31CFF00FE331C /* teste1.mp3 */; };
 		94CF287329DC92E30053A687 /* GridComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF287229DC92E30053A687 /* GridComponent.swift */; };
 		94CF287529DC98C70053A687 /* NewBrailleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF287429DC98C70053A687 /* NewBrailleView.swift */; };
@@ -105,6 +117,18 @@
 		44D0D64A29CC99E800FACC96 /* Fredoka-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Medium.ttf"; sourceTree = "<group>"; };
 		44D0D64B29CC99E800FACC96 /* Fredoka-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Bold.ttf"; sourceTree = "<group>"; };
 		44D0D65129CCDA0B00FACC96 /* MNISTClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MNISTClassifier.mlmodel; sourceTree = "<group>"; };
+		44E4C7C529E7A3E600CDB7F5 /* si.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = si.mp3; sourceTree = "<group>"; };
+		44E4C7C629E7A3E600CDB7F5 /* re.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = re.mp3; sourceTree = "<group>"; };
+		44E4C7C729E7A3E600CDB7F5 /* Button.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Button.mp3; sourceTree = "<group>"; };
+		44E4C7C829E7A3E600CDB7F5 /* sol.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sol.mp3; sourceTree = "<group>"; };
+		44E4C7C929E7A3E600CDB7F5 /* do.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = do.mp3; sourceTree = "<group>"; };
+		44E4C7CA29E7A3E600CDB7F5 /* Star.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Star.mp3; sourceTree = "<group>"; };
+		44E4C7CB29E7A3E700CDB7F5 /* fa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fa.mp3; sourceTree = "<group>"; };
+		44E4C7CC29E7A3E700CDB7F5 /* la.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = la.mp3; sourceTree = "<group>"; };
+		44E4C7CD29E7A3E700CDB7F5 /* mi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mi.mp3; sourceTree = "<group>"; };
+		44E4C7CE29E7A3E700CDB7F5 /* Braille.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Braille.mp3; sourceTree = "<group>"; };
+		44E4C7CF29E7A3E700CDB7F5 /* Balloon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Balloon.mp3; sourceTree = "<group>"; };
+		44E4C7DC29E7C2E300CDB7F5 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		9493891529D31CFF00FE331C /* teste1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = teste1.mp3; sourceTree = "<group>"; };
 		94CF287229DC92E30053A687 /* GridComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridComponent.swift; sourceTree = "<group>"; };
 		94CF287429DC98C70053A687 /* NewBrailleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBrailleView.swift; sourceTree = "<group>"; };
@@ -165,9 +189,8 @@
 				44D0D63329CB475900FACC96 /* SelectView.swift */,
 				44D0D63729CB491F00FACC96 /* ErrorView.swift */,
 				447B059629D4E3C700714CE9 /* CongratsView.swift */,
-				94CF287C29DDE8890053A687 /* circleScene.swift */,
-				94CF288429E4F0100053A687 /* brailleScene.swift */,
 				440B64B629DCCCB8008B663B /* GameView.swift */,
+				44E4C7DC29E7C2E300CDB7F5 /* LaunchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,11 +223,13 @@
 		4499B7D829C355CA001D39EB /* ImPada */ = {
 			isa = PBXGroup;
 			children = (
+				44E4C7C429E7A23600CDB7F5 /* Sounds */,
 				443DD62629D6442600412D7E /* Info.plist */,
 				4449780C29D4F53200111F41 /* Game */,
 				44D0D65329CCDA4600FACC96 /* NeuralNetwork */,
 				44D0D64229CC8D3300FACC96 /* Styles */,
 				4489343B29C8A46E0072EC28 /* Model */,
+				44E4C7DB29E7B1DB00CDB7F5 /* Scenes */,
 				4489343829C88C1A0072EC28 /* Views */,
 				4499B7EA29C4813C001D39EB /* Components */,
 				4499B7E729C47F6E001D39EB /* Helpers */,
@@ -248,8 +273,6 @@
 		44D0D64029CB4AFB00FACC96 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				44D0D63E29CB4ADE00FACC96 /* AppImageButton.swift */,
-				447B059429D4834300714CE9 /* AppButton.swift */,
 				94CF287629DCA64D0053A687 /* AppBanner.swift */,
 				44D0D63E29CB4ADE00FACC96 /* NavigationImageButton.swift */,
 				447B059429D4834300714CE9 /* NavigationButton.swift */,
@@ -303,6 +326,33 @@
 				94CF287229DC92E30053A687 /* GridComponent.swift */,
 			);
 			path = Subviews;
+			sourceTree = "<group>";
+		};
+		44E4C7C429E7A23600CDB7F5 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				44E4C7CF29E7A3E700CDB7F5 /* Balloon.mp3 */,
+				44E4C7C729E7A3E600CDB7F5 /* Button.mp3 */,
+				44E4C7CE29E7A3E700CDB7F5 /* Braille.mp3 */,
+				44E4C7C929E7A3E600CDB7F5 /* do.mp3 */,
+				44E4C7CA29E7A3E600CDB7F5 /* Star.mp3 */,
+				44E4C7CB29E7A3E700CDB7F5 /* fa.mp3 */,
+				44E4C7CC29E7A3E700CDB7F5 /* la.mp3 */,
+				44E4C7CD29E7A3E700CDB7F5 /* mi.mp3 */,
+				44E4C7C629E7A3E600CDB7F5 /* re.mp3 */,
+				44E4C7C529E7A3E600CDB7F5 /* si.mp3 */,
+				44E4C7C829E7A3E600CDB7F5 /* sol.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		44E4C7DB29E7B1DB00CDB7F5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				94CF287C29DDE8890053A687 /* circleScene.swift */,
+				94CF288429E4F0100053A687 /* brailleScene.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,12 +413,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44E4C7D629E7A3E700CDB7F5 /* fa.mp3 in Resources */,
+				44E4C7D829E7A3E700CDB7F5 /* mi.mp3 in Resources */,
+				44E4C7D729E7A3E700CDB7F5 /* la.mp3 in Resources */,
+				44E4C7D429E7A3E700CDB7F5 /* do.mp3 in Resources */,
 				44D0D64C29CC99E800FACC96 /* Fredoka-SemiBold.ttf in Resources */,
 				4499B7E129C355CC001D39EB /* Preview Assets.xcassets in Resources */,
 				44D0D64E29CC99E800FACC96 /* Fredoka-Regular.ttf in Resources */,
+				44E4C7D329E7A3E700CDB7F5 /* sol.mp3 in Resources */,
+				44E4C7D929E7A3E700CDB7F5 /* Braille.mp3 in Resources */,
+				44E4C7D229E7A3E700CDB7F5 /* Button.mp3 in Resources */,
 				44D0D64D29CC99E800FACC96 /* Fredoka-Light.ttf in Resources */,
+				44E4C7DA29E7A3E700CDB7F5 /* Balloon.mp3 in Resources */,
 				44D0D65029CC99E800FACC96 /* Fredoka-Bold.ttf in Resources */,
+				44E4C7D129E7A3E700CDB7F5 /* re.mp3 in Resources */,
+				44E4C7D029E7A3E700CDB7F5 /* si.mp3 in Resources */,
 				44D0D64F29CC99E800FACC96 /* Fredoka-Medium.ttf in Resources */,
+				44E4C7D529E7A3E700CDB7F5 /* Star.mp3 in Resources */,
 				9493891629D31CFF00FE331C /* teste1.mp3 in Resources */,
 				4499B7DE29C355CC001D39EB /* Assets.xcassets in Resources */,
 			);
@@ -392,6 +453,7 @@
 				440B64C029DD9D90008B663B /* ToyViewModel.swift in Sources */,
 				440B64A129DCADF6008B663B /* Game2.swift in Sources */,
 				44D0D63429CB475900FACC96 /* SelectView.swift in Sources */,
+				44E4C7DD29E7C2E300CDB7F5 /* LaunchView.swift in Sources */,
 				94CF288529E4F0100053A687 /* brailleScene.swift in Sources */,
 				44D0D63229CB470400FACC96 /* HomeView.swift in Sources */,
 				440B64A929DCAE57008B663B /* Game5.swift in Sources */,
@@ -409,20 +471,20 @@
 				440B64BC29DD93A1008B663B /* InteractfulToy.swift in Sources */,
 				4499B7DC29C355CA001D39EB /* ContentView.swift in Sources */,
 				94CF287529DC98C70053A687 /* NewBrailleView.swift in Sources */,
-				4489343D29C8A4970072EC28 /* BrailleModel.swift in Sources */,
+				4489343D29C8A4970072EC28 /* DataController.swift in Sources */,
 				94CF287D29DDE8890053A687 /* circleScene.swift in Sources */,
 				4489343D29C8A4970072EC28 /* DataController.swift in Sources */,
 				44D0D63829CB491F00FACC96 /* ErrorView.swift in Sources */,
 				449E017B29DB4E61000C0053 /* Converter.swift in Sources */,
 				4499B7DA29C355CA001D39EB /* ImPadaApp.swift in Sources */,
 				94CF287729DCA64D0053A687 /* AppBanner.swift in Sources */,
-				447B059529D4834300714CE9 /* AppButton.swift in Sources */,
+				447B059529D4834300714CE9 /* NavigationButton.swift in Sources */,
 				94CF287329DC92E30053A687 /* GridComponent.swift in Sources */,
 				44D0D63029CB469C00FACC96 /* OnboardingView.swift in Sources */,
 				4499B7EC29C48173001D39EB /* GridView.swift in Sources */,
-				44D0D63F29CB4ADE00FACC96 /* AppImageButton.swift in Sources */,
+				44D0D63F29CB4ADE00FACC96 /* NavigationImageButton.swift in Sources */,
 				4499B7EC29C48173001D39EB /* GridView.swift in Sources */,
-				44D0D63F29CB4ADE00FACC96 /* AppImageButton.swift in Sources */,
+				44D0D63F29CB4ADE00FACC96 /* NavigationImageButton.swift in Sources */,
 				447B059529D4834300714CE9 /* NavigationButton.swift in Sources */,
 				44D0D63029CB469C00FACC96 /* OnboardingView.swift in Sources */,
 				4499B7EC29C48173001D39EB /* GridView.swift in Sources */,

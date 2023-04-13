@@ -64,6 +64,8 @@ struct GameView: View {
             self.bgImg = "SkyScenario"
         } else if (level == 3){
             self.bgImg = "SandScenario"
+        } else if (level == 7){
+            self.bgImg = "MusicScenario"
         } else if (level == 8){
             self.bgImg = "NightScenario"
         }

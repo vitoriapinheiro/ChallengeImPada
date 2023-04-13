@@ -48,7 +48,7 @@ struct Game3: View {
     func checkEggs(index: Int){
         self.eggs[index] = true
         if(eggs[0] && eggs[1] && eggs[2]){
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.75){
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2){
                 self.wonGame = true
             }
         }

@@ -87,7 +87,7 @@ struct Game5: View {
     func checkMeteors(index: Int){
         self.meteors[index] = false
         if(!meteors[0] && !meteors[1] && !meteors[2] && !meteors[3] && !meteors[4]){
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1){
                 self.wonGame = true
             }
         }

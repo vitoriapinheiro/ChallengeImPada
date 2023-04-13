@@ -13,7 +13,6 @@ struct ContentView: View {
     @FetchRequest(sortDescriptors: []) var Number: FetchedResults<Number>
         
     var body: some View {
-
         NavigationView{
             if(onboarding){
                 HomeView(onboarding: $onboarding)

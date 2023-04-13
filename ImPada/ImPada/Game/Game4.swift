@@ -62,7 +62,7 @@ struct Game4: View {
     func checkElement(index: Int){
         self.elements[index] = false
         if(!elements[0] && !elements[1] && !elements[2] && !elements[3]){
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.75){
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1){
                 self.wonGame = true
             }
         }

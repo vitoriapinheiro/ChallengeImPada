@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "ChatLevel6.png",
+      "filename" : "Nível 12.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "ChatLevel6@2x.png",
+      "filename" : "Nível 12@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "ChatLevel6@3x.png",
+      "filename" : "Nível 12@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

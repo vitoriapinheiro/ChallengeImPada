@@ -42,13 +42,16 @@ struct Game2: View {
     }
     
     func disappearBallon(isPink: Bool){
+        MusicPlayer.shared.startBackgroundMusic(backgroundMusicFileName: "Balloon")
         if(isPink){
             self.Pink = false
         } else {
             self.Purple = false
         }
         if(!self.Pink && !self.Purple){
-            self.wonGame = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1){
+                self.wonGame = true
+            }
         }
     }
 }

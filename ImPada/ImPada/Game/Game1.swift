@@ -34,7 +34,9 @@ struct Game1: View {
             }
             .onEnded{ state in
                 if(abs(self.dinoPos.x - self.housePos.x) < 150 && abs(self.dinoPos.y - self.housePos.y) < 150){
-                    wonGame = true
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1){
+                        self.wonGame = true
+                    }
                 }
                 dinoPos = CGPoint(x: UIScreen.screenWidth*15/100, y: UIScreen.screenHeight*45/100)
             }

@@ -96,9 +96,10 @@ struct Game8: View {
         
         }
     func checkStars(index: Int){
+        MusicPlayer.shared.startBackgroundMusic(backgroundMusicFileName: "Star")
         self.stars[index] = false
         if(!stars[0] && !stars[1] && !stars[2] && !stars[3] && !stars[4] && !stars[5] && !stars[6] && !stars[7]){
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.75){
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1){
                 self.wonGame = true
             }
         }

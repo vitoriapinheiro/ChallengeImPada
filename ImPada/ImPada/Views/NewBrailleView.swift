@@ -19,6 +19,7 @@ struct NewBrailleView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .clipped()
+            
             VStack{
                 HStack{
                     NavigationImageButton(
@@ -49,7 +50,6 @@ struct NewBrailleView: View {
                     SpriteKitContainer(scene: brailleScene(isActive: codeLeft[0]))
                     SpriteKitContainer(scene: brailleScene(isActive: codeRight[0]))
                     
-                    //GridComponent(codeLeft: numbers[1].codeLeft, codeRight: numbers[1].codeRight)
                 }
                 .padding(.leading, 300)
                 .padding(.trailing, 300)
