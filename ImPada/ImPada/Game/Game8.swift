@@ -88,7 +88,7 @@ struct Game8: View {
                     wonGame = false
                 stars = [true, true, true, true, true, true, true, true]
                 }
-                NavigationLink(destination: CongratsView(level: $level), isActive: $wonGame){}
+                NavigationLink(destination: NewBrailleView(level: $level), isActive: $wonGame){}
             }
             .padding(.leading, 90)
             .padding(.trailing, 90)

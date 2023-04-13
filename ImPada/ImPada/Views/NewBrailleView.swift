@@ -10,8 +10,15 @@ import SwiftUI
 struct NewBrailleView: View {
     @Binding var level: Int
     
-    @State var codeLeft: [Bool] = [false, false, true, true, true, true]
-    @State var codeRight: [Bool] = [true, false, false, false, false, false]
+    @State var codeLeft: [[Bool]] = [[false, false], [false, false], [false, false]]
+    @State var codeRight: [[Bool]] = [[false, false], [false, false], [false, false]]
+    
+    @ObservedObject var BrailleVM: BrailleViewModel
+        
+        init(level: Binding<Int>) {
+            self._level = level
+            _BrailleVM = ObservedObject(wrappedValue: BrailleViewModel(level: level))
+        }
     
     var body: some View {
         ZStack {
@@ -19,6 +26,7 @@ struct NewBrailleView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .clipped()
+            
             VStack{
                 HStack{
                     NavigationImageButton(
@@ -28,32 +36,32 @@ struct NewBrailleView: View {
                         height: 87
                     )
                     .padding(.top)
-                    .padding(.leading, 100)
+                    .padding(.leading, 120)
                     
                     AppBanner(
                         icon: "TalkBox",
                         nextView: {AnyView(BrailleView(level: $level))},
                         width: 800,
                         height: 140,
-                        title: "Entendendo em Braille o número 1",
+                        title: "Entendendo em Braille o número",
                         size: 48
                     )
-                    .padding(.top, 90)
-                    .padding(.leading, 55)
-                    .padding(.trailing, 200)
-                    .padding(.bottom, 50)
+                    .padding(.top, 40)
+                    .padding(.leading, 35)
+                    .padding(.trailing, 150)
+                    .padding(.bottom, 40)
                 }
                 
                 HStack(spacing: 50){
                     
-                    SpriteKitContainer(scene: brailleScene(isActive: codeLeft[0]))
-                    SpriteKitContainer(scene: brailleScene(isActive: codeRight[0]))
+                    SpriteKitContainer(scene: brailleScene(level: BrailleVM.codeLeft))
+                    SpriteKitContainer(scene: brailleScene(level: BrailleVM.codeRight))
                     
-                    //GridComponent(codeLeft: numbers[1].codeLeft, codeRight: numbers[1].codeRight)
                 }
                 .padding(.leading, 300)
                 .padding(.trailing, 300)
                 .background(Color.clear)
+                
                 
                 HStack{
                     Spacer()
@@ -65,10 +73,8 @@ struct NewBrailleView: View {
                               title: "Finalizar",
                               size: 24
                     )
-                    .padding(.trailing, 100)
+                    .padding(.trailing, 150)
                     .padding(.bottom, 70)
-                }.onAppear{
-                    updateLevel()
                 }
                 
             }
@@ -76,12 +82,5 @@ struct NewBrailleView: View {
         .ignoresSafeArea(.all)
     }
     
-    private func updateLevel(){
-        if level == 1 {
-            codeLeft = [false, false, true, true, true, true]
-            codeRight = [true, false, false, false, false, false]
-        }
-    }
+    
 }
-
-

@@ -50,7 +50,7 @@ class DataController: ObservableObject {
 //                return NumberModels(
 //                    id: 1,
 //                    name: "One",
-//                    codeLeft: [false, false, true, true, true, true],
+//                    codeLeft: [[false, false], [true, true], [true, true]],
 //                    codeRight: [true, false, false, false, false, false]
 //                )
 //            case .TWO :

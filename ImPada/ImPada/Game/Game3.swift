@@ -35,7 +35,8 @@ struct Game3: View {
                     },
                     action: {checkEggs(index: 2)},
                     height: 340, width: 310)
-                NavigationLink(destination: CongratsView(level: $level), isActive: $wonGame){}
+
+                NavigationLink(destination: NewBrailleView(level: $level), isActive: $wonGame){}
             }.onAppear{
                 wonGame = false
             eggs = [false, false, false]

@@ -19,6 +19,7 @@ class circleScene: SKScene {
         self.backgroundColor = SKColor.clear
     }
     
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

@@ -81,7 +81,7 @@ struct Game5: View {
                         }
                     Spacer(minLength: 600)
                 }}.padding(.bottom, 50)
-            NavigationLink(destination: CongratsView(level: $level), isActive: $wonGame){}
+            NavigationLink(destination: NewBrailleView(level: $level), isActive: $wonGame){}
         }
     }
     func checkMeteors(index: Int){
