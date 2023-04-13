@@ -104,7 +104,7 @@ struct Game6: View {
                     }.frame(width: 200, height: 200)
                     
                 }
-                NavigationLink(destination: CongratsView(level: $level), isActive: $wonGame){}
+                NavigationLink(destination: BrailleView(level: $level), isActive: $wonGame){}
             }.frame(height: 170).padding(.leading, 200)
                                 .onAppear{
                                     wonGame = false

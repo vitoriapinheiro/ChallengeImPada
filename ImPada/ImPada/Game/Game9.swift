@@ -78,7 +78,7 @@ struct Game9: View {
                         },
                         action: {checkTeeth(index: 8)},
                         height: 65, width: 65)
-                    NavigationLink(destination: CongratsView(level: $level), isActive: $wonGame){}
+                    NavigationLink(destination: BrailleView(level: $level), isActive: $wonGame){}
                 }.offset(y: 6)
                 .padding(.top, 20)
             }.onAppear{

@@ -49,7 +49,6 @@
 		44D0D64E29CC99E800FACC96 /* Fredoka-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64929CC99E800FACC96 /* Fredoka-Regular.ttf */; };
 		44D0D64F29CC99E800FACC96 /* Fredoka-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64A29CC99E800FACC96 /* Fredoka-Medium.ttf */; };
 		44D0D65029CC99E800FACC96 /* Fredoka-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D0D64B29CC99E800FACC96 /* Fredoka-Bold.ttf */; };
-		44D0D65229CCDA0C00FACC96 /* MNISTClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 44D0D65129CCDA0B00FACC96 /* MNISTClassifier.mlmodel */; };
 		44E4C7D029E7A3E700CDB7F5 /* si.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44E4C7C529E7A3E600CDB7F5 /* si.mp3 */; };
 		44E4C7D129E7A3E700CDB7F5 /* re.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44E4C7C629E7A3E600CDB7F5 /* re.mp3 */; };
 		44E4C7D229E7A3E700CDB7F5 /* Button.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44E4C7C729E7A3E600CDB7F5 /* Button.mp3 */; };
@@ -116,7 +115,6 @@
 		44D0D64929CC99E800FACC96 /* Fredoka-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Regular.ttf"; sourceTree = "<group>"; };
 		44D0D64A29CC99E800FACC96 /* Fredoka-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Medium.ttf"; sourceTree = "<group>"; };
 		44D0D64B29CC99E800FACC96 /* Fredoka-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Bold.ttf"; sourceTree = "<group>"; };
-		44D0D65129CCDA0B00FACC96 /* MNISTClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MNISTClassifier.mlmodel; sourceTree = "<group>"; };
 		44E4C7C529E7A3E600CDB7F5 /* si.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = si.mp3; sourceTree = "<group>"; };
 		44E4C7C629E7A3E600CDB7F5 /* re.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = re.mp3; sourceTree = "<group>"; };
 		44E4C7C729E7A3E600CDB7F5 /* Button.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Button.mp3; sourceTree = "<group>"; };
@@ -314,7 +312,6 @@
 		44D0D65329CCDA4600FACC96 /* NeuralNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				44D0D65129CCDA0B00FACC96 /* MNISTClassifier.mlmodel */,
 			);
 			path = NeuralNetwork;
 			sourceTree = "<group>";
@@ -490,7 +487,6 @@
 				4499B7EC29C48173001D39EB /* GridView.swift in Sources */,
 				44D0D63F29CB4ADE00FACC96 /* NavigationImageButton.swift in Sources */,
 				44D0D62E29CB451C00FACC96 /* NumberView.swift in Sources */,
-				44D0D65229CCDA0C00FACC96 /* MNISTClassifier.mlmodel in Sources */,
 				443DD62529D6032900412D7E /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,9 +614,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_ASSET_PATHS = "\"ImPada/Preview Content\"";
-				DEVELOPMENT_TEAM = 38JDBWN7B4;
+				DEVELOPMENT_TEAM = PST723S8CA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImPada/Info.plist;
@@ -635,7 +631,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = vitoria.pinheiro.ImPada;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -653,9 +649,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_ASSET_PATHS = "\"ImPada/Preview Content\"";
-				DEVELOPMENT_TEAM = 38JDBWN7B4;
+				DEVELOPMENT_TEAM = PST723S8CA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImPada/Info.plist;
@@ -670,7 +666,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = vitoria.pinheiro.ImPada;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
