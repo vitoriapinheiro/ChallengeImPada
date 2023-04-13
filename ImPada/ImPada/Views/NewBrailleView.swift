@@ -36,19 +36,20 @@ struct NewBrailleView: View {
                         height: 87
                     )
                     .padding(.top)
-                    .padding(.leading, 100)
+                    .padding(.leading, 120)
                     
                     AppBanner(
                         icon: "TalkBox",
                         nextView: {AnyView(BrailleView(level: $level))},
                         width: 800,
                         height: 140,
-                        title: "Entendendo em Braille o número 1",
+                        title: "Entendendo em Braille o número",
                         size: 48
                     )
-                    .padding(.top, 90)
-                    .padding(.leading, 55)
-                    .padding(.trailing, 200)
+                    .padding(.top, 40)
+                    .padding(.leading, 35)
+                    .padding(.trailing, 150)
+                    .padding(.bottom, 40)
                 }
                 
                 HStack(spacing: 50){
@@ -72,10 +73,8 @@ struct NewBrailleView: View {
                               title: "Finalizar",
                               size: 24
                     )
-                    .padding(.trailing, 100)
+                    .padding(.trailing, 150)
                     .padding(.bottom, 70)
-                }.onAppear{
-                    updateLevel()
                 }
                 
             }
@@ -83,10 +82,5 @@ struct NewBrailleView: View {
         .ignoresSafeArea(.all)
     }
     
-    private func updateLevel(){
-        if level == 1 {
-            codeLeft = [false, false, true, true, true, true]
-            codeRight = [true, false, false, false, false, false]
-        }
-    }
+    
 }
